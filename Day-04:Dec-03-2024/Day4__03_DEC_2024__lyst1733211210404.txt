@@ -1,0 +1,387 @@
+Date:- 03-DEC-2024 (TUE(1))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+(***)
+==> print() with {} and format()::-
+Ex:-
+	a=11
+	b=3
+	"Sum of a and b == a+b"
+	print("Sum of",a,"and",b,"is ==",a+b)
+	
+	"Sum of 11 and 3 == 11+3"
+	"Sum of 11 and 3 == 14"
+
+{} ---> replacement-operator (use it inside a string "...",'...')
+Ex:-
+	"Sum of {} and {} == {}"
+	
+=** format() is used with string, it will provide replacing values
+Ex:-
+	print("Sum of {} and {} is == {}".format(a,b,a+b))
+	a ----> 1st-replacement-operator
+	b ----> 2nd-replacement-operator
+	a+b ---> 3rd-replacement-operator
+==Diagram==
+
+print("Sum of {} and {} is == {}".format(a,b,a+b))
+
+
+
+##WAP to display proper-msgs with data using {} and format()
+#Program (Sample9.py)
+
+#Program to display proper-msgs with data using {} and format()
+#Program (Sample9.py)
+
+a=11
+b=3
+print("Arithmetic-Operations");
+print("A =",a)
+print("B =",b)
+print()
+print("Sum of {} and {} == {}".format(a,b,a+b))
+print("Sub of {} and {} == {}".format(a,b,a-b))
+print("Prod of {} and {} == {}".format(a,b,a*b))
+print("Div of {} and {} == {}".format(a,b,a/b))
+print("MOD of {} and {} == {}".format(a,b,a%b))
+
+
+NOTE:-
+= use {} replacement-operator only inside a string
+
+Other-Langs:-
+(C/C++/Java/.net)
+--------------
+{} ---> body/def/block-of-code
+Ex:-
+void main()
+{
+.....
+}
+
+
+
+===============================================================
+(***)
+==>> print() with sep="" and end="" chars:::-
+----------------------------------------------
+= seperator is given with sep=""
+= end-char is given with end=""
+
+Ex1:- (Seperator)
+	print(a,b,a+b)    ----> 11 3 14
+(for every , we get 1-auto-space)
+(Default seperator is space)
+(we can have our own seperator for ,)
+==>
+	print(a,b,a+b,sep=":")		---> 11:3:14
+
+Ex2:- (End-char)
+	print(a)				11
+	print(b)				3
+	print(a+b)    			14
+(print() it prints data & takes cursor to next-line)
+(so default end-char is \n char)
+(we can have our own end-char)
+	print(a,end="+")				11+3=14...
+	print(b,end="=")
+	print(a+b,end="...")
+
+
+##Program  (Sample10.py)
+#Program to work with sep="" and end=""
+
+'''
+a=11
+b=3
+print(a,b,a+b)
+#sep=""
+print(a,b,a+b,sep=":")
+print(a,b,a+b,sep=",")
+print(a,b,a+b,sep="..")
+print(a,b,a+b,sep="->>>>>>")			#->  ->
+'''
+
+
+
+a=11
+b=3
+#end=""
+print(a)
+print(b)
+print(a+b)
+print()
+print(a,end="+")
+print(b,end="=")
+print(a+b,end="...")
+
+
+
+
+***New-Topic***
+------------------
+==> Flow of Execution of Python Program:-
+"3-steps for Py-Prog"
+-----------------------
+1) Write & Save Program
+Ex:- "Filename.py" (Sample.py)
+
+2) Run the Program
+cmd> py Filename.py (cmd>py Sample.py)
+NOTE:
+When we run the program, internally 2-things happen,
+=> Run = Interpretion + Execution
+**Interpretion (Python Interpreter)
+	=** It converts our code to machine-code(OS-code) Binary-code
+**Execution (PVM)
+	=** Such machine-code is executed by Python-Virtual-Machine
+
+==***Py.Interpreter + PVM ===> Python-Software
+
+3) Verify Output of Program
+	= On successful execution, we get output of program
+	
+==Diagram== 
+		  **[Sample.py]**
+				|
+				|
+			<<run>>	(Interpretation + Execution)
+				|
+				|
+			OUTPUT
+
+
+
+(****************)
+=====================================================================
+==> Python Fundamentals:-
+= Fundamentals means basics of writing a Python Program
+= They are as follows(8-fund...),
+	A) Identifiers
+	B) Reserved Words (Keywords)
+	C) Datatypes
+	D) Conversions
+	E) Slicings
+	F) Type-Casting
+	G) Escape Sequence Chars
+	H) Constants (Literals)
+
+
+
+A) Identifiers:-
+=================
+= Identifying something uniquely in program
+*Ex:
+	Variable name		(names-in-prog are Identifiers)
+	Function name
+	Class name
+	Module name
+	Object name
+	package name
+	etc...
+= Here names given in program are called Identifiers
+
+
+
+==>>> 6-Rules for Identifiers:-
+i) Start with an alphabet (Upper/Lower/underscore _)
+Ex:(python-interactive-mode)
+>>> A=10
+>>> b=20
+>>> _c=30
+>>> print(A,b,_c)
+10 20 30
+>>>
+
+NOTE:-
+= Python is case-sensitive language
+(upper-case alphabets are not equal to lower-case alphabets)
+Ex:- var(a) is-not-equal-to var(A)
+(both are diff-vars)
+>>> A=10
+>>> a=20
+>>> print(A,a)
+10 20
+>>> print(A+a)
+30
+>>>
+
+ii) No-Spaces or NO-Sp-Chars in between 
+(_ is allowed)
+Ex:-
+>>> roll_no=1001
+>>> stud_name="Sai"
+>>> phone_num=9988776655
+>>> print(roll_no,stud_name,phone_num)
+1001 Sai 9988776655
+>>>
+
+##Errors...
+>>> roll no=1001
+SyntaxError
+>>> phone-num=9988776655
+SyntaxError
+>>>
+
+Ex: (Invalid...Error)
+phone-no
+phone%no
+phone$no
+phone no
+
+
+iii) Use digits only at last or middle but not beginning
+Ex:-
+>>> phoneno1=9988776655
+>>> phoneno2=5566778899
+>>> print(phoneno1,phoneno2)
+
+(or)
+>>> match1score=86
+>>> match2score=95
+>>> print(match1score, match2score)
+86 95
+
+>>> 1address="hyderabad"
+SyntaxError: 
+>>>
+
+NOTE:- (Invalid...Error)
+1name="Sai";
+1stPhoneNum=9988776655;
+
+
+iv)*** They are case-sensitive
+(upper-case not-equal-to lower-case)
+Ex:
+>>> a=10
+>>> A=100
+>>> print(a,A)
+10 100
+>>> print(a+A)
+110
+>>>
+
+= Here "a" variable is not same as "A" variable
+= Both are different variables with different values
+
+
+v) (Keywords)Reserved words cannot be Identifiers
+Ex:
+>>> a=10		#OK
+>>> b=20
+
+>>> if=100		#SyntaxError
+>>> for=200
+>>>
+
+
+vi) Max-Length is No-Limit(256/512/1024)
+Ex:-
+>>> my_permanent_address="Hyderabad";
+(20-chars in var-name)
+>>> print(my_permanent_address);
+
+
+
+***NOTE:-
+1)Identifiers Sp-case::-
+-------------------------
+= Python-supports duplicate-vars Identifiers in same-program (Example, variables) but takes the latest assigned value
+
+==Diagram==
+(****)
+(same-var diff-vals)
+a=10
+a=100
+a=10.5
+a="Hello"
+------------------
+	a[]-----\\\	[10]
+			\\\	[100]	#unused-vals
+			\\\	[10.5]
+			-->["Hello"]
+
+#Program (Demo.py)
+#Program with duplicate-variables(Identifiers)
+
+a=10;
+print(a)
+
+a=100;
+print(a)
+
+a=10.5;
+print(a)
+
+a="Hello";
+print(a);
+
+
+NOTE:-(other-langs C,C++,Java,.net)
+int a=10;
+float a= 10.5; #error...
+
+
+
+
+---------------------------------------------------
+B) Reserved Words (Keywords):-
+(pre-def words with sp-meaning & sp-usage in prog...)
+= Pre-defined words in Python with special-meaning and sp.usage in program
+= All Keywords are in lowercase(except-3)
+(30+ standard-keywords)
+---------------------------------------------
+and				exec(*)				not
+assert			finally				or
+break			for					pass
+class			from				print(*)
+continue		global				raise
+def				if					return
+del				import				try
+elif			in					while
+else			is					with
+except			lambda				yield
+--------------------------------------------
+True			False				None
+as 				nonlocal			async
+await			
+
+
+=> Verifying Keywords:
+= Use the below commands,
+>>> import keyword
+>>> keyword.kwlist
+[........] ---> list-of-keywords
+
+=* "keyword" is pre-defined py-lib-file (keyword.py file)
+= kwlist is a variable and gives list-of-keywords [.....]sqr-brackets
+
+
+NOTE:-
+= True, False, None starts with cap.letter
+
+NOTE:-(Side)
+------------
+str -----> quotes ('', "", '''...''')
+list -----> [coll.] sqr-brackets
+
+
+	
+
+
+
