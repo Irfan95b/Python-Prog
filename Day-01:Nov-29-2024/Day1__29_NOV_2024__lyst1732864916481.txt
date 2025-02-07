@@ -1,0 +1,295 @@
+Date:- 29-NOV-2024 (FRI(4))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+NOTICE:-
+==> Python Full Stack Development
+----------------------------------
+	a) Core Python
+	b) Advanced Python
+	c) Data-Science Modules
+	(NumPy, Pandas, Scipy, Matplotlib)
+	d) DJango Framework (Websites/Web-apps)
+	e) Ui-Tech (HTML/CSS/Jscript/Bootstrap etc) & ReactJS
+	f) DB-tech (MySQL or Oracle, SQLite3)
+	(3-real-time Mini-Projects + Live website Dev) www.mywebsite.com
+	(4and1/2+ months)
+
+
+
+
+Todays-Topics?? 
+----------------------
+***sp-case of print()***
+-----------------------------
+==> empty-print() as new-line-char::-
+= it is sp-case of print() func
+= Every print() prints/displays data on output-screen & takes cursor automatically to next-line
+Ex:-
+>>> print("Hi"); print("Hello"); print("Welcome");
+Hi
+Hello
+Welcome
+>>>
+
+
+=** However, we can use empty-print() function, indirectly as new-line-char or empty-line
+Ex:-
+>>> print()
+
+>>>
+(here, it prints nothing on output-screen, but takes cursor automatically to next-line)
+(indirectly it is working like-a \n new-line-char)
+
+
+#Program
+-----------
+##WAP to work with \n char and empty print() function
+==Refer-Notes==
+
+**IQ**
+-------
+>>> #Program to work with \n and empty print() function...
+>>> #case1
+>>> print("Hi")
+Hi
+>>> print("Hello")
+Hello
+>>> print("Welcome")
+Welcome
+>>>
+>>> #case2
+>>> print("Hi"); print("Hello"); print("Welcome");
+Hi
+Hello
+Welcome
+>>>
+>>> #case3
+>>> print("Hi"); print("\nHello"); print("\nWelcome");
+Hi
+
+Hello
+
+Welcome
+>>>
+>>> #case4
+>>> print("Hi"); print(); print("Hello"); print(); print("Welcome");
+Hi
+
+Hello
+
+Welcome
+>>>
+>>> #case5
+>>> print("Hi\nHello\nWelcome")
+Hi
+Hello
+Welcome
+>>>
+>>> #case6
+>>> print("Hi\n\nHello\n\nWelcome")
+Hi
+
+Hello
+
+Welcome
+>>>
+
+
+
+"Assignment-Program"
+-----------------
+##WAP to display "Birthday-Wishes" to your Friend in multiple-lines, using empty-print()
+Ex:-
+			"Hello Buddy..!!"
+			
+			"Wish you Happy-Birthday"
+			
+			"God Bless you!!"
+
+
+>>> #Program to display "Birthday-Wishes" to your Friend...
+>>> print("\t\t\t\tHello Buddy..!!"); print(); print("\t\t\t\tWish you Happy Birthday"); print(); print("\t\t\t\tGod Bless You!!");
+                                Hello Buddy..!!
+
+                                Wish you Happy Birthday
+
+                                God Bless You!!
+>>> #sp-case
+>>> print("\t\t\t\tHello Buddy..!!\n\n\t\t\t\tWish you Happy Birthday\n\n\t\t\t\tGod Bless You!!");
+                                Hello Buddy..!!
+
+                                Wish you Happy Birthday
+
+                                God Bless You!!
+>>>
+
+
+
+
+***********
+==================
+==> Basic Features of Python::-
+(4-Features)
+= Python supports many features in comp-programming
+
+A) Python is Interpreted
+= Py-code is processed & executed directly at Runtime
+= No need to save & compile the prog. before execution
+= It is done by "Python-Interpreter"
+(small piece of s/w in-built with py-software)
+= This is same like PERL, PHP, HTML languages
+
+NOTE:-
+==Diagram==
+	py-coding(>>>10+20)
+		|
+	"Enter-Key"
+		|
+	<<Python-Interpreter>>
+		|
+	"convert"
+		|
+	<Mach-Code>(Binary->0,1)
+		|
+	"Executed"
+		|
+	**OUTPUT**
+		
+
+= In python, we directly run programs to get the output
+(Python-Interpreter takes our code, converts into OS-Mach-Code, and it is executed to give Output)
+
+
+b) Python is Interactive
+= It means Direct-Input & Direct-Output
+= We can directly run programs on "Python Interactive Mode" using Python-Interpreter
+Ex:-
+#Program
+-----------
+#WAP to perform basic Arithmetic-Operations in Py.Interactive-Mode
+==(refer-notes)==
+
+>>>#Program to perform Basic Arithmetic Operations in Py.Inter-Mode
+>>> a=11
+>>> b=3
+>>> print(a)
+11
+>>> print(b)
+3
+>>> print(a+b)
+14
+>>> print(a-b)
+8
+>>> print(a*b)
+33
+>>> print(a/b)
+3.6666666666666665
+>>> print(a%b)
+2
+
+
+c) Python is OOP:-
+(Object-Oriented-Programming)
+= Python supports all the principles of OOP
+Ex:-
+	= abstraction
+	= encapsulation
+	= inheritance
+	= polymorphism
+	= classes & objects
+NOTE:-
+=** It(OOP) is a comp-Programming based on Real-Life situations
+
+
+d) Python is Beginner's PL:-
+= It is best for Programmers at beginner's level
+(No C,C++,java,.Net is required)
+(Simple English-Like Statements)
+(Easy Coding)
+(Fast Dev...)
+Ex:-
+Variables, Data-types, Operators, Control-Structures, Arrays, Functions, Strings... etc
+
+
+
+*********************
+======================================================
+==>>** Python Variables in Interactive-Mode::-
+Ex:-
+	a=10
+	b=20
+def:-
+	= Variable is name-of-a-value in program
+	Ex:-
+		a=10
+	a ----> var-name
+	10 ----> is a value/obj
+==Diagram==
+(in-memory)
+	a[]--------->[10]
+Ex:-
+	b=20
+	b[]--------->[20]
+
+**Use??
+-------
+	= Variable stores-a-value in program 
+
+
+##Program
+==========
+##WAP to perform Arithmetic Operations using 2-vars x=11.5 and y=2.5
+==Refer-Notes==
+
+>>> #Program to perform Arithmetic-Operations using 2-vars...
+>>> x=11.5
+>>> y=2.5
+>>> print(x)
+11.5
+>>> print(y)
+2.5
+>>> print(x+y)
+14.0
+>>> print(x-y)
+9.0
+>>> print(x*y)
+28.75
+>>> print(x/y)
+4.6
+>>> print(x%y)
+1.5
+>>>
+>>> #w.o print()
+>>> x
+11.5
+>>> y
+2.5
+>>> x+y
+14.0
+>>> x-y
+9.0
+>>> x*y
+28.75
+>>> x/y
+4.6
+>>> x%y
+1.5
+>>>
+>>> #sp-case print() with ,comma
+>>> print(x+y,x-y,x*y,x/y,x%y)
+14.0 9.0 28.75 4.6 1.5
+>>>
+
+NOTE:-
+= print() with ,(comma), displays multi-data with 1-auto-space
+
+
