@@ -1,0 +1,314 @@
+Date:- 30-NOV-2024 (SAT(5))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+NOTICE:-
+==> Python Full Stack Development
+----------------------------------
+	a) Core Python
+	b) Advanced Python
+	c) Data-Science Modules
+	(NumPy, Pandas, Scipy, Matplotlib)
+	d) DJango Framework (Websites/Web-apps)
+	e) Ui-Tech (HTML/CSS/Jscript/Bootstrap etc) & ReactJS
+	f) DB-tech (MySQL or Oracle, SQLite3)
+	(3-real-time Mini-Projects + Live website Dev) www.mywebsite.com
+	(4and1/2+ months)
+
+
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+==> Working with Student-data Variables::-
+= Student-data variables are,
+Ex:-
+	sno=1001
+	sname="Sai"
+	age=21
+	height=6.2
+	marks=540
+	avg=90.0
+	addr='Hyderabad'
+	phno=9988776655
+
+
+#Program
+---------------	
+##WAP to display "Student-data" using diff.variables	
+==ref-notes==
+
+>>> #Program to display "Student-data" with diff-vars
+>>> sno=1001
+>>> sname="Sai"
+>>> age=21
+>>> height=6.2
+>>> marks=540
+>>> avg=90.0
+>>> addr='Hyderabad'
+>>> phno=9988776655
+>>>
+>>> #sp-case
+>>> print("Student-Details");
+Student-Details
+>>> print(sno)
+1001
+>>> print(sname)
+Sai
+>>> print(age)
+21
+>>> print(height)
+6.2
+>>> print(marks)
+540
+>>> print(avg)
+90.0
+>>> print(addr)
+Hyderabad
+>>> print(phno)
+9988776655
+>>>
+>>>#sp-case of print()
+>>> print(sno,sname,age,height,marks,avg,addr,phno);
+1001 Sai 21 6.2 540 90.0 Hyderabad 9988776655
+>>>
+
+NOTE:-
+1) In print(), we can display multiple-data at-a-time using ,(comma) operator
+=** for every comma, we get 1-auto-space
+
+
+
+**Sp-case of print() with ,comma:-
+----------------------------------
+#Assignment-Program
+#WAP to display all Arithmetic-Operations at-a-time using , in single-print()
+Ex1:-
+#Sample-code
+===============
+>>> #Program to display "Arithmetic-Opers" all at-a-time using , in print()
+>>>
+>>> a=11
+>>> b=3
+>>> print(a,b)
+11 3
+>>> print(a+b,a-b,a*b,a/b,a%b);
+14 8 33 3.6666666666666665 2
+>>>
+
+
+NOTE:-
+= using ,(comma) in print() we can display multiple-data or msgs
+= For every ,(comma) we get 1-auto-space
+
+
+
+(*******)
+===>> Limitations of Py.Interactive-Mode::-
+=============================================	
+==> exit():-
+-------------
+	= it is used to close Py.Inter.Mode
+Ex:-
+>>> exit()	(press-enter)
+= this function comes out of Py.Interactive.Mode & comes back to windows-cmd-prompt
+(func, py-inter-mode, win-cmd-prmpt)
+	
+
+(***)	
+NOTE:-
+1) Once we exit from Py.Inter-Mode, our Program-code (or) Variables, values etc.. everything is deleted from Memory
+i.e, vars/data/vals/prog-code
+2) Hence, Py.Inter-Mode is Temporary
+3) However, we can make Python-code Permanent using "Python-Script-Files" (or) "Python-Program-Files"
+Ex:-
+	Sample.py
+	Demo.py
+
+
+
+****
+================================================================
+==>> Python Script Files::- (.py files)
+(Python Program Files)
+= Py-Inter-Mode(>>>) is Temperory (temp)
+(Py-Inter-Mode)
+= To overcome this limitation, we use Py.Script.Files
+= For these files, File-extension for Py.Script.Files is ".py"
+i.e, "Filename.py"
+
+Ex:-
+	Sample.py
+	Demo.py
+
+=** Advantage with Py.Script.Files is,
+	= Write program once, Run any no.of.times
+	= Write program once, do modify any no.of.times
+
+
+(****)
+==> 3-Steps for Python-programming::-
+1) Write & Save the Program 
+	Ex:- "Sample.py"
+	
+2) RUN the Program
+	cmd> py Filename.py (Enter-key)
+	cmd> python Filename.py (Enter-key)
+	Ex:-
+	cmd> py Sample.py
+	cmd> python Sample.py (Enter-key)
+	
+3) Verify Output of Program
+
+
+(***)
+==> Editors for Python-Program::-
+= Editor means it is small-piece of software, where we write & save our programs
+=> Editor softwares:-
+1) Notepad
+2) Edit-Plus
+3) Notepad++ (preferable**) [colourisation/auto-completion/intelli-sense]
+---------------------------
+(Advanced-Editors)
+4) Py-Charm IDE (preferable**)
+5) Jupyter Editor
+6) Atom IDE
+
+
+
+(**)
+==> Download & Install Notepad++ Editor::-
+--------------------------------------------
+= It is open-source software (free-of-cost)
+= It can be downloaded from,
+www.notepad-plus-plus.org/downloads/
+(8.7.1 version)
+= Once after downloaded, install it in our system 
+
+
+
+
+(***)
+==> Notepad++ Shortcuts::-
+-----------------------------
+Ctrl+N (New-Page)
+Ctrl+O (Open-File)
+Ctrl+S (Save-Program)
+-------------------------
+Ctrl+C (Copy-Text)
+Ctrl+V (Paste-Text)
+Ctrl+X (CUT-Text)
+-------------------------
+Ctrl+A (Select-ALL-Text)
+Shift+Arrow-key (Select-Text-in-Direction)
+---------------------------
+Ctrl+Z (Undo-operation)
+Ctrl+Y (Redo-operation)
+
+
+
+##First Permanent Program in Python Script Files...
+----------------------------------------------------
+
+##WAP to display "Welcome Message" on Console(O/P-scrn)
+##Program (Sample.py)
+
+#Program to display "Welcome-Message" on console...
+#Sample.py (D:\SAISIR\PYTHON\Sample.py)
+
+print('Hello Students!!');
+print("Welcome to PYTHON")
+print('''**ALL THE BEST**''');
+
+
+NOTE:-
+1) To Open "Cmd-Prompt", rt.click on Filename & select "Open Folder in Cmd"
+2) Whenever we do changes(modifications) in program, "Save-it" & "Re-run" it in CMD
+
+
+
+
+#Assignment-Prog
+====================
+#WAP to display "Ganesh-Festival" wishes in mulitple-lines...
+#Program (Sample1.py)
+==Ref-Notes==
+
+#Program to display "Gaensh-Festival" wishes in multiple-msgs...
+#(D:\SAISIR\PYTHON\Sample1.py)
+
+print('Hello Family & Friends..!!');
+print("Happy Ganesh-Festival")
+print('''Enjoy the Festival''');
+
+
+
+*************
+"Assignment-Prog"
+------------------
+#Program
+#WAP to display "Congratulation-wishes" to your friend for getting JOB in IT-Company (3-lines)
+#D:\SAISIR\PYTHON\Sample11.py
+
+
+
+
+
+(****)
+#Another-Topic-PROGRAM
+------------------------
+#WAP to display "Welcome Message" in center-of-line using \t space-char
+
+#Program to display "Welcome-Message" on console in center-of-line using \t tab-space-char...
+#Sample2.py (D:\SAISIR\PYTHON\Sample2.py)
+
+print('\t\t\tHello Students!!');
+print("\t\t\tWelcome to PYTHON")
+print('''\t\t\t**ALL THE BEST**''');
+
+
+NOTE:-
+1) \t (Tab-space-char)
+= 8-spaces (sp-char with combi. of 2-chars)
+= use in print(), inside a str('...' or "...")
+
+
+
+==> Another-Topic-Program::-
+---------------------------
+##WAP to display "Welcome-Message" in Center-of-line & with multiple-lines
+#Sample21.py
+
+#Program to display "Welcome-Message" on console in center-of-line & multiple-lines...
+#Sample21.py (D:\SAISIR\PYTHON\Sample21.py)
+
+print("\n\t\t\tHello Students!!");
+print()
+print("\n\t\t\tWelcome to PYTHON")
+print()
+print("\n\t\t\t**ALL THE BEST**");
+
+
+NOTE:-
+1) \n (new-line-char)
+= it takes cursor to next-line, while printing data using print() and used inside a str("...." or '....')
+
+2) print() "Empty-print-func"
+= it does not print anything, but takes cursor to next-line
+(indirectly new-line-char \n)
+
+
+
+
+
+
