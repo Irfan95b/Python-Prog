@@ -1,0 +1,398 @@
+Date:- 02-DEC-2024 (MON(0))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***New-Topic***
+------------------
+==> print() with multiple-messages(data)::-
+(it is done with ,comma oper)
+= In print(), we can display any data
+Ex:-
+	print(a);		#10 (num-data)
+	print("Hello");		#(str-data)
+	
+=*** However, In print() allows us to display mulitple-data at-a-time, using ,(comma) operator
+Ex:-
+>>> a=10
+>>> b=20
+>>> print(a,b)
+10 20
+>>> print("Hi","Hello","Welcome");
+Hi Hello Welcome
+>>>
+	
+=** For every ,(comma) we get 1-auto-space
+
+
+#Program
+===========
+##WAP to demo print() function and ,(comma) operator
+
+#Program to work with print() and ,(comma) operator(Arithmetic-Operations)
+#Sample3.py
+
+
+print("Arithmetic","Operations");
+a=11
+b=3
+print(a,b)
+print(a,b,a+b)
+print(a,b,a-b)
+print(a,b,a*b)
+print(a,b,a/b)
+print(a,b,a%b)
+print()
+print(a+b,a-b,a*b,a/b,a%b)
+print()
+print("End","of","the","Program");
+
+
+NOTE:-
+-----
+1)
+==> IN C,
+	printf("%d %d %d %d %d",a+b,a-b,a*b,a/b,a%b);
+	
+2)
+'''......''' (triple-q)
+=> 2-uses:-
+	a) string
+	b) multi-line-comment
+
+
+
+"Assignment-Program" 
+(Sample31.py)
+------------------------------------
+#WAP to perform Arithmetic-Operations using x=11.5 and y=2.5 with print() and ,(comma) operator
+(+,-,*,/,%)
+
+
+
+===================================================
+(***)
+==> print() with both Messages & Data::-
+= print() function displays any data directly on output-screen
+Ex:-
+	print(a)	----> 11
+	print(b)	----> 3
+	
+= However, we can also display data with proper-messages as follows, 
+(use comma,)
+Ex:-
+	print("A value is =",a);  	#A value is = 11
+	print("B value is =",b);	#B value is = 3
+=** message----->text----->string(coll.of.chars)
+= Hence our messages are in string-data(use quotes)
+= to seperate message-data and output-data use ,(comma)
+(Here we use msg(Str) and data(value) with ,comma in print())
+
+
+#Program
+==========
+##WAP to perform Arithmetic Operations with proper-messages & data
+
+#Program to perform Arithmetic-Operations using proper-messages & data...
+#Sample4.py
+
+print("Arithmetic","Operations");
+a=11
+b=3
+print("A value =",a)
+print("B value =",b)
+print()
+print("Add =",a+b)
+print("Sub =",a-b)
+print("Prod =",a*b)
+print("Div(Q) =",a/b)
+print("Mod(R) =",a%b)
+print()
+print("End","of","the","Program");
+
+
+--------------------------------
+"Assignment-Prog" (Sample41.py)
+--------------------------------
+##WAP to perform Arithmetic Operations with proper-messages using,
+x=11.5 and y=2.5
+(float-values) #Real-No.s
+
+Hint::- "Addition ="
+		"Subtraction ="
+		.....
+		etc
+
+
+
+
+----------------------------------------------------
+***Another-Topic***
+---------------------
+==> print() with  multiple-messages & multiple-data::-
+(mulitple-msgs with multiple-data using ,comma oper)
+Ex:-
+O/P:-
+	"Sum of 11 and 3 is == 14"
+	"Sum of",a,"and",b,"is ==",a+b	
+
+	print("Sum of",a,"and",b,"is ==",a+b)
+
+
+#Program
+===========
+##WAP to perform Arithmetic-Operations with Proper-messages in sentences
+
+#Program to display "Arithmetic Operations with proper-msgs in sentences
+#Program(Sample5.py)
+
+a=11
+b=3
+print("A value =",a)
+print("B value =",b)
+print()
+print("Arithmetic-Operations")
+
+print("-------------------------------")
+print("Sum of",a,"and",b,"is ==",a+b);
+print("Sub of",a,"and",b,"is ==",a-b);
+print("Prod of",a,"and",b,"is ==",a*b);
+print("Div(Q) of",a,"and",b,"is ==",a/b);
+print("Mod(R) of",a,"and",b,"is ==",a%b);
+print("-------------------------------")
+
+print("End of the Program");
+
+
+
+
+"Assignment-Program" (Sample51.py)
+--------------------------------------
+#WAP to display Arithmetic-Operations using x=11.5, y=2.5 with multiple-messages & multiple-data in sentences
+Hint:-
+(o/p)
+	"Addition of 11.5 and 2.5 is == 14.0"
+	"Subtraction of 11.5 and 2.5 is == 9.0"
+	....
+	etc
+	
+
+
+
+NOTE:-(real-time usage)
+= Your account No. XXXX3698 is debited with Rs.10 at Tea-Point. UPI Trans.No.1100256986. Remaining Bal. 5550
+	
+	
+	
+(****)
+=============================================================
+===> print() with Strings::-
+def:-
+	= String is coll.of.any.chars, represented in quotations
+	(single-quotes/double-quotes/triple-quotes)
+Ex:-
+	'hello'					#single-word (single-q)
+	"Welcome to Python"		#multiple-words(1-line-text)(double-q)
+	
+	'''						#multi-line-text(compulsory)(triple-q)
+	#101, St.No.9,
+	HimayathNagar,
+	Hyd-29
+	(TS)India
+	'''
+	
+NOTE:-(***)
+=*** triple-q (2-ways) ('''...''' or """...""")
+		i) multi-line-str
+		ii) multi-line-comment
+	
+
+
+#Program	
+##WAP to work with Strings in print() using diff-quotations	
+	
+##Program to work with Strings in print() using diff-quotes
+##Sample6.py
+'''
+#single-quotes
+print('Sai');
+print('Name = Sai')
+
+print()
+#double-q
+print("Sai");
+print("Full-Name = Sai Ram Kumar");
+'''
+
+print()
+#triple-q
+print('''
+Address ::
+------------------
+	#101, St.No.9,
+
+	Himayathnagar,
+	
+	Hyd-29,
+	
+	(TS)India
+------------------
+''');
+
+
+
+
+
+NOTE:-
+= inside triple-q string, we get tab-spaces & new-lines as it is...
+(no-need to use \t or \n seperatly)
+
+
+
+
+(***)
+============================================================
+==> print() with Basic String Operations::-
+(print() with string-operations)
+= Using strings we can perform some 2-basic operations,
+Ex:-
+	a) String-Addition(Concatenation) (+ oper)
+	b) String-Repetition	(* oper)
+
+a)	
+=>** String-Addition::-
+	= It means combining 2 or more strings into single-string
+	= it is done with + operator
+	= it is also called as "String-Concatenation"
+	Ex:-
+		"Hello"
+		"Welcome"
+		"Hello"+"Welcome" ----> "HelloWelcome"
+		(here 2nd-string is added at the end of 1st-string)
+
+b)
+=** String Repetition::-
+	= It means given string is repeated with n-no.of-times
+	= it is done with * operator
+	Ex:-
+		"Sai"*3 ---> "SaiSaiSai"
+		5*"Ram" ---> "RamRamRamRamRam"
+		
+
+#Program		
+##WAP to demo String-Addition & String-Repetition
+##Sample7.py
+
+
+##Program to demo String-Addition & String-Repetition
+##Sample7.py
+
+'''
+print("String-Addition")
+print("Hello");
+print("Welcome");
+print("Hello"+"Welcome");
+print("Hello"+" Welcome"+" World");
+'''
+
+print()
+print("String-Repetition")
+print("Sai"*3)
+print(5*"Ram")
+#print("Hello"*3.5)     #Error...(use only int-value)
+
+
+
+
+NOTE:-
+------
+1) + (2-uses)
+	a) num-add (10+20)
+	b) str-add ("hello"+"world")
+
+
+2) * (2-uses)
+	a) num-mul (10*20)
+	b) str-repeat ("sai"*3)
+
+
+
+(****)
+==========================================================
+==> print() with Variables & type()::-
+---------------------------------------
+= Variable is name-of-a-value in program
+= Variable stores-a-value in program
+Ex:-
+	a=10
+	a[]------->[10]
+	a is var-name
+	10 is value
+	= (Assignment-operator)
+	
+=** In Python variables, we can store any type of data directly
+(dtype NOT-req)
+Ex:-
+	a=10			(int-value)
+	b=5.6			(float-value)
+	x=True			(boolean-value)
+	y=5+6j			(complex-value)
+	z="Sai"			(str-value)
+***(based on value dtype taken auto...)
+(for variables, datatype is not-required in python. it is taken automatically)	
+
+NOTE:-
+1) type() function,
+= it is pre-defined function, it gives datatype of a variable or value used in program
+Ex:-
+	type(a) or type(10.5)
+
+
+
+#Program
+##WAP to demo diff.type of data in python-variables
+
+##Program to demo diff.type of data in python-variables
+#Sample8.py
+
+print("Python Variables & type()");
+print("----------------------------");
+
+a=10
+print(a,type(a))
+
+b=5.6
+print(b,type(b))
+
+x=True
+print(x,type(x))
+
+y=5+6j
+print(y,type(y))
+
+z="Sai"	
+print(z,type(z))
+
+print("------------------");
+
+
+NOTE:-
+=*** int,float,bool,complex,str -----> Basic-dtypes-in-PY
+
+(***)
+NOTE:-
+class ----> Model (int)
+object ----> End-Product (10,20,30)
+
+
