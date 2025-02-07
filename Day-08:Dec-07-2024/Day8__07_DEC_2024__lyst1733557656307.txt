@@ -1,0 +1,549 @@
+Date:- 07-DEC-2024 (SAT(5))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***New-Topic***
+------------------
+===>>> Operators in Python:-
+**def:-
+	= Operators are special-symbols, which are used to perform operations on values
+Ex:-
+	sum=a+b;
+=**Here a,b are Values(Operands) and +,= are Operators
+==Diagram==
+
+	
+=*** In python, we have following operators
+(8-types of operators)
+A) Arithmetic Operators
+B) Relational Operators (Comparison)
+C) Logical Operators
+D) Bitwise Operators
+E) Assignment Operators
+F) Ternary Operator (Conditional)
+G) Special Operators
+	i) identity operators
+	ii) membership operators
+
+
+A) Arithmetic Operators:-
+= They take 2-values to perform the operation
+(Binary Operators)->7-types
+= They are,
+	+ (Addition a+b)
+	- (Subtraction a-b)
+	* (Multiplication a*b)
+	/ (Division a/b) #Quot, till Rem is 0(approx) (deci-point)
+	% (Modulo a%b)	 #Rem, if it is not-div
+	//(Floor-Division a//b) #Quot,if Rem is not div.. (only-int)
+	**(Exponent or Power a**b, x power y)
+	
+##Program (ArithmeticOperators1.py)	
+##Program to demo Arithmetic-Operators)
+##Program (ArithmeticOperators1.py)	
+##Program to demo Arithmetic-Operators)
+
+a=11;
+b=3;
+print(a+b);
+print(a-b);
+print(a*b);
+print(a/b);		#Quot, till Rem is Zero(approx)
+print(a%b);		#Rem, if Rem is not-divisible
+print(a//b);	#Quot, if Rem is not-divisible
+print(a**b);
+
+
+
+##sp-cases
+NOTE:-
+==(refer-notes)==
+
+1) Arithmetic-Operators(+,*) also supports string-additions & String-repetitions
++ oper supports str-additions
+* oper supports str-repetition
+	Ex:-
+		"Hello"+"World" ====> "HelloWorld"
+		"Hello"*5 ====> "HelloHelloHelloHelloHello"
+		(1-thing multi-uses)
+		
+2) Division(or Modulo) by 0:- 
+(div/0 or mod%0 ----> ZeroDivisionError)
+(modulo by 0)
+= In python, anything divided by 0 (or) anything modulo by 0 is "ZeroDivisionError"
+(it is not-def in python)
+Ex:-
+int/0	(or)	int%0		Ex1:- 10/0 or 10%0
+float/0  (or)	float%0		Ex2:- 10.5/0.0 or 10.5%0.0
+
+==>> (Prog-practice in >>>)
+Ex:-
+>>> 10/0
+>>> 10.0/0.0
+>>>
+>>> 10%0
+>>> 10.0%0.0
+>>>
+
+
+B) Relational Operators:-
+= These operators compares 2-values and gives True or False
+(Comparison Operators)
+Ex:-
+	<	(less-than	a<b)
+	> 	(greater-than	a>b)
+	<=	(less-than or equals to	a<=b)
+	>=	(greater-than or equals to	a>=b)
+	==  (Equals-to  a==b)
+	!=(<>)  (Not-Equals to  a!=b)
+
+##Program (RelationalOperators1.py)	
+#Program to demo Relational-Operators
+##Program (RelationalOperators1.py)	
+#Program to demo Relational-Operators with Integers
+
+a=11
+b=3
+print(a<b)
+print(a>b)
+
+print(a<=b)     #11<3(F) or 11==3(F) (any one of them)
+print(a>=b)     #11>3(T) or 11==3(F)
+
+print(a==b)
+print(a!=b)
+
+
+
+
+C) Logical Operators:-
+= They checks/compares multiple conditions at a time and gives True or False
+= They are 3-types,
+logical and	  (if all conds. are T then T o.w F)
+logical or	  (if any 1-cond. is T then T o.w F)
+logical not	  (T is F & F is T)
+
+==Truth-Table==
+Cond1.	Cond2	and		or
+---------------------------
+T		T		T		T 
+T		F		F		T
+F		T		F		T
+F		F		F		F
+--------------------------
+
+cond.	not
+------------
+T		F
+F		T
+------------
+
+Ex:-
+	(a<5) and (b>5)
+	(a>5) or (b==20);
+	not (a==b);
+*= For better coding use () for condition-check
+
+
+##Program (LogicalOperators1.py)
+(Program to work with Logical Operators)
+
+##Program (LogicalOperators1.py)
+#Program to work with Logical Operators
+
+'''
+a=10;
+b=20;
+#logical-and
+print(a>5 and b>5)	#T and T (True)
+print(a>5 and b<5)	#T and F (False)
+print(a<5 and b>5)	#F and T (False)
+print(a<5 and b<5)	#F and F (False)
+'''
+
+'''
+print()
+###
+a=10;
+b=20;
+#logical-or
+print(a>5 or b==20);	#T or T (True)
+print(a>5 or b!=20);	#T or F (True)
+print(a<5 or b==20);	#F or T (True)
+print(a<5 or b!=20);	#F or F (False)
+'''
+
+
+print()
+###
+a=10
+b=20
+#logical-not
+print(not (a==b));	#not F(True)
+print(not (a!=b));	#not T(False)
+
+
+
+
+NOTE:- (Sp-cases)
+==Refer-Notes==
+=** For non-boolean values,
+1)
+0,0.0(any-Zero) is False
+any Non-Zero is True (0.5,15,-9,-0.6)
+----------------------------------------------
+2)
+""(Empty-String) is False
+any-non-empty-string is True ("hi","123", "0","False")
+
+
+
+D) Assignment Operators:- (=)
+= It is used to assign a value to variable
+= It is single(=) operator
+=** LHS=RHS (RHS-value is assigned to LHS-var)
+Ex:-
+a=10;
+b=20;
+sum=a+b;
+
+//Program (AssignmentOperator1.py)
+(Program to demo Assignment-Operator)
+
+NOTE:-
+= We can perform multiple-var-assignments in single-stmts
+Ex:-
+a=b=c=10;
+x,y,z=10,20,30;
+
+
+***Sp-case (Compound-Assignments)
+--------------------------------
+(operate and assign)
+**= It provides compound-assignments (Combine Assignments)
+(here we combine assignment-operator with other-operators)
+Ex:-
++=		(a+=b => a=a+b)
+-=		(a-=b => a=a-b)
+*=		(a*=b => a=a*b)
+/=		(a/=b => a=a/b)
+%=		(a%=b => a=a%b)
+//=		(a//=b => a=a//b) #practice-last-2-cases (//=, **=)
+**=		(a**=b => a=a**b)	
+#here in all-case b-value is not changed
+
+
+##Program (AssignmentOperator1.py)
+#Program to demo Assignment-Operator
+
+
+'''
+a=10;
+b=20;
+sum=a+b;    #30
+print(a,b,sum);
+'''
+
+'''
+print()
+####multi-var-assignment
+a=b=c=10;   #multi-vars with same-value
+x,y,z=11,22,33;     #multi-vars with diff-vals
+print(a);
+print(b);
+print(c);
+print(x);
+print(y);
+print(z);
+'''
+
+
+
+print()
+####sp-case
+#Compound Assignments (operate & assign)
+a=11;
+b=3;
+a+=b;	#a=a+b;
+print(a);
+print(b);
+
+
+print()
+a=11;
+b=3;
+a-=b;   #a=a-b
+print(a);
+print(b);
+
+
+print()
+a=11;
+b=3;
+a*=b;   #a=a*b
+print(a);
+print(b);
+
+
+print()
+a=11;
+b=3;
+a/=b;   #a=a/b
+print(a);
+print(b);
+
+
+print()
+a=11;
+b=3;
+a%=b;   #a=a%b
+print(a);
+print(b);
+
+NOTE:-
+=** Here compound means 2 or more opers at-a-time
+
+
+
+
+**F) Ternary Operator (Conditional-oper):-
+(Ternary means 3)
+= It takes 3 values to perform operation
+Syntax:-
+(if-else) ?:
+	result = (1stValue) if (condition) else (2ndValue);
+
+(if T then 1st-val)
+(if F then 2nd-val)
+= It takes 1stValue, if condition is True
+= It takes 2ndValue, if condition is False
+
+
+##Program (TernaryOperator1.py)
+#(Program to demo Ternary-Operator)
+
+'''
+#case1
+#a,b = 10,20;
+a,b=100,50
+result = "A is min" if (a<b) else "B is min";
+print(result);
+'''
+
+#case2
+#a,b=11,22;
+a,b=11,11
+result = "A&B are SAME" if (a==b) else "A&B are NOT-SAME";
+print(result);
+
+
+
+
+**G) Special Operators:-
+= We have 2-types,
+	i)Identity Oper (is, is not) ---> checks addr. same or not (T/F)
+	ii) Membership Oper (in, not in) ---> checks given-val in coll. or not (T/F)
+(both cases we get T/F)
+	
+i) Identity Operator:- (id---->id()---->address)
+= It is used for address comparison (True or False)
+= They are,
+	a) is
+	b) is not
+	Ex:- a is b
+		a is not b
+
+ii) Membership Operator:-
+= It checks whether given value/obj is present or not in given collection(True or False)
+(Ex:- String, List, Set, Tuple or Dict)
+= They are
+	a) in
+	b) not in
+	Ex:-
+		"h" in "hello" (True)
+		10 not in [10,20,30] (False)
+
+
+##Program (IdentityMembershipOper1.py)
+##Program to work with Identity-Operator & Membership-Operator
+
+##Program (IdentityMembershipOper1.py)
+##Program to work with Identity-Operator & Membership-Operator
+
+'''
+#identity-oper
+#is, is not
+a=10;
+b=10;
+print(a is b);
+print(a is not b);
+###
+a=10;
+b=20;
+print(a is not b);
+print(a is b);
+'''
+
+'''
+#in, not in
+#using strings
+ss = "Hello and Welcome";
+print('H' in ss);
+print('z' in ss);
+print('x' not in ss);
+print('and' in ss);
+print('or' in ss);
+print('HW' in ss); #takes single-word(F)
+print(" " in ss)
+print()
+'''
+
+
+#using lists-coll[....]
+list1=[10,20,30,"Sai",6.0,True];
+print(10 in list1);
+print(100 in list1);
+print("Sai" in list1);
+print("Ram" not in list1);
+print(True not in list1);
+print("S" in list1)
+
+
+
+
+***5) Bitwise Operators:-
+= These operators perform operations on bit-levels of given-numbers
+(Binary format 0,1)
+= They are applicable only on int-types and boolean-types
+(On other types we get Error)
+= They are 6-types,
+& (bitwise-and a&b)
+| (bitwise-or a|b)
+^ (bitwise exclusive-or a^b) nor-operator
+~ (bitwise-complement ~a)
+<< (bitwise-left-shift a<<b)
+>> (bitwise-right-shift a>>b)
+
+NOTE:-
+& (all bits are 1 it gives 1 o.w 0)
+| (any one-bit is 1 it gives 1 o.w 0)
+^ (all bits are same it gives 0 o.w 1)
+~ (1 is 0 and 0 is 1)
+<< (shifts bit-levels to left-side)
+>> (shifts bit-levels to right-side)
+
+
+==Truth-Table==
+Bit1	Bit2	&		|		^ 
+----------------------------------------
+1		1		1		1		0
+1		0 	 	0		1		1
+0		1		0		1		1
+0		0		0		0		0
+-----------------------------------------
+
+Bit		~
+------------
+1		0
+0		1
+------------
+
+
+Ex:-
+	a=10		1010(binary)
+	b=18		10010(binary)
+
+NOTE:-
+>>> bin(10)
+'0b1010'
+>>> bin(18)
+'0b10010'
+>>>
+
+Ex:-(applying bitwise operators on int-type values)
+(10&18)
+			128 64 32 16 8  4  2  1
+	10		0   0  0  0  1  0  1  0		#8+2===>10
+	18		0   0  0  1  0  0  1  0		#16+2 ===> 18
+	---------------------------------
+	&		0   0  0  0	 0  0  1  0		(2)
+	----------------------------------
+
+(10|18)
+			128 64 32 16 8  4  2  1
+	10		0   0  0  0  1  0  1  0
+	18		0   0  0  1  0  0  1  0	
+	---------------------------------
+	|		0   0  0  1	 1  0  1  0		(26)
+	---------------------------------
+
+
+(10^18)
+			128 64 32 16 8  4  2  1
+	10		0   0  0  0  1  0  1  0
+	18		0   0  0  1  0  0  1  0	
+	---------------------------------
+	^		0   0  0  1	 1  0  0  0		(24)
+	---------------------------------
+
+
+~10
+			128 64 32 16 8  4  2  1
+	10		0   0  0  0  1  0  1  0
+	---------------------------------
+	~		1   1  1  1	 0  1  0  1		(245)[-11]
+	---------------------------------
+Ex:-
+	8-bits(1-Byte)  -128 -------- 0 -------- +127
+	245(out-of-range) value is recycled from other-side
+	
+
+left-shift
+(10<<2)
+			128 64 	32 	16 	8  	4  	2  	1
+	10		0   0	0  	0  	1  	0  	1  	0
+	--------------------------------------
+	0 	0  	0  	0  	1  	0  	1  	0			
+	<< 		0   0  	1  	0  	1  	0  	0  	0		
+			0   0  	1  	0  	1  	0  	0  	0		(32+8=40)
+	---------------------------------
+(Bits moving out-of-order ignore & empty bits replace with 0)
+
+
+right-shift
+(18>>2)
+			128 64 	32 	16 	8  	4  	2  	1
+	18		0   0  	0  	1  	0  	0  	1  	0
+	---------------------------------------
+	>>  			0   0  	0  	1  	0  	0  	1  	0  
+			0   0  	0  	0  	0  	1  	0  	0		(4)	
+	-------------------------------------
+
+
+##Program (BitwiseOperators1.py)
+#Program to demo Bitwise-Operators
+
+
+a=10
+b=18
+print(a&b);
+print(a|b);
+print(a^b);
+print(~a);
+print(a<<2);
+print(b>>2);
+
+
+

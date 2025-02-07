@@ -1,0 +1,436 @@
+Date:- 04-DEC-2024 (WED(2))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***((Py-Tech-Concepts))**
+===========================
+==> Lines & Indentations in Python:-
+---------------------------------------
+(Py supports line-indentation for body/def/block)
+(it is group-of-stmts with equal-no.of.spaces from left)
+= In Python, we dont have block-of-code using {} curly-braces
+= {} curly-braces are used for class,function,control-structures definitions etc (body/def/block-of-code)
+Ex:- (C,C++,Java,.Net)
+void main()
+{
+	....
+	....
+	body (or) def (or) block-of-code
+	....
+	....
+}
+(or)
+a=20	10
+b=10	20
+if(a>b)
+{
+	S.o.pln("A is Bigger");
+}
+else
+{
+	S.o.pln("B is Bigger");
+}
+
+
+=** Here block-of-code is done by using "line-indentations"
+Ex: (in PY)
+if True:
+	print("True");
+	print("True-Part");
+else:
+  print("False");
+  print("False-Part");
+
+
+
+NOTE:-
+= Indentation means giving equal no.of spaces form left for all-stmts(block-of-code)
+=*** group-of-stmts with equal no.of.spaces from left-side
+
+
+##Program (Demo1.py)
+#Program to demo line-indentations
+
+if False:	#True/False
+    print("True-Part");
+    print("True-Block-of-Code");
+else:
+   print("False-Part");
+   print("False-Block-of-Code");
+
+
+NOTE:- IQ***
+=** All statements should have equal no.of spaces for indentation(block-of-code) (atleast-1) o.w we get "IndentationError"
+=** Give atleast 1-space for "Indentation"
+
+
+
+(***)
+===============================================
+==> Multi-Line Statement:-
+***(single-stmt in multiple-lines)
+= \(continuation-char) is used here
+
+= In python, we generally write single-stmt in single-line
+= We also use ;(de-limiter) to end-a-stmt
+Ex:-
+a=10;
+print(a);
+
+= Python provides \(continuation-char) [Back-slash-char]
+= Using this character(\), we can write single-stmt in multiple-lines
+Ex:-
+sum = a+b+c;	(single-stmt in single-line)
+(or)
+sum = 	a+\		(single-stmt in multi-lines using \char)
+		b+\
+		c;
+
+
+##Program (Demo2.py)
+#Prog to demo multi-line stmts using \(continuation-char)
+
+a=10;
+b=20;
+c=30;
+sum=a+b+c;
+print(sum)
+
+sum = 	a+\
+		b+\
+		c;
+print(sum);
+
+
+#Sp-Case without \ continuation-char (Collections-of-data Ex:- list)
+months = ['Jan', 'Feb', 'Mar',
+				'Apr', 'May', 'Jun',
+						'Jul', 'Aug','Sep',
+                            'Oct','Nov','Dec'];
+print(months);
+
+
+
+**NOTE:-(Sp-cases)
+= Collection-Statements like [list], {set}, (tuple) in multiple-lines does not require continuation-character(\) because , is seperator in collections
+
+NOTE:-
+=> \(back-slash-char) 2-uses
+	a) \n, \t chars
+	b) \continuation-char
+
+
+
+
+(*******)
+==>> Quotations in Python:-
+==(refer-notes)==
+= We use Quotations, to represent a string (coll.of.chars) 
+Ex:-
+	single-quotes ('....')
+	double-quotes ("....")
+	triple-quotes ('''....''') or (""".......""")
+		[triple-single-quotes or triple-double-quotes]
+
+Ex:-
+	'Sai';			#single-quotes	(single-word)
+	"New Hyderabad";#double-quotes	(one-line) (multi-words)
+					
+	'''			#triple-single-quotes (multi-line-text) compulsory
+	#101, Street No.9,	#triple-double-quotes
+	HimayathNagar,
+	Hyderabad-29
+	TS(India)
+	''';	
+
+NOTE:-
+= Use ''' or """ for multiple-line-strings
+Ex:- 	address
+		email-body
+		comments
+		msgs
+		etc...
+
+
+"Assignment"
+---------------
+##Program (Demo3.py)
+##Program to demo Quotations with strings
+
+name='Sai'
+
+city="New Hyd"
+
+addr='''
+#101, St.No.9,
+HimayathNagar,
+Hyd-29
+TS(India)
+'''
+
+print("Quotations in Python");
+print(name)
+print(city)
+print(addr)
+
+
+
+
+***************
+=================================================
+==> Comments in Python-Prog:-
+------------------------------
+==(refer-notes)==
+= Comments provide description of a python-program
+= Comments are NOT executed & NOT displayed
+= We have 2-types of comments,
+	a) Single-line-comment (#)
+	b) Multi-Line-comment (triple-quotes ''' (or) """)
+
+= ***Advantage is Easy Understanding of Program
+Ex:- 
+'''
+	Program : To display Welcome Msg on Console
+	Author : Sai sir
+	Company : TCS
+	Location : New Hyd
+	Country : India
+	Technology : Python
+	Project : ICICI-Bank Loans Project
+	Platform : Windows 11 Pro
+	Date of Creation : 04-DEC-2024
+	Date of Modification : 14-DEC-2024
+'''
+
+
+
+
+"Assignment"
+##Program (Demo31.py)
+-----------------------------------
+#Program to demo comments in quotes
+'''
+	Program : To display Welcome Msg on Console
+	Author : Sai sir
+	Company : TCS
+	Location : New Hyd
+	Country : India
+	Technology : Python
+	Platform : Windows 10 Pro
+	Date of Creation : 26-JULY-2022
+	Date of Modification : 28-JULY-2022
+'''
+
+print("Hello Students");
+print("Welcome to Python");
+print("***ALL THE BEST");
+
+print()
+a=11
+b=3
+print(a+b);     #addition
+print(a-b);     #subtraction
+print(a*b);     #Multiplication
+#End of the Prog
+
+NOTE:-
+= We can write comments anywhere in program (begin or middle or end)
+
+
+
+
+(***)
+======================================
+==> Header & Suite :-
+---------------------------
+= Header is a statement with :(colon is compulsory)
+= Suite is a indented block-of-code (line-indentations)
+Ex1:-
+if expression:		#Header
+	stmt1;			#Suite
+	stmt2;
+else:				#Header
+	stmt3;			#Suite
+	stmt4;
+
+Ex2:-
+for loop:	#Header
+	stmt1;	#Suite
+	stmt2;
+	stmt3;
+
+
+
+***Py-Fundamentals [contd...]****
+==============================================================
+(***)
+==> Python Variables::-
+==(refer-notes)==
+def:-
+	= Variable is name-of-value in program
+Ex:-
+	a=10;
+	b=5.6;
+	c=True;
+	name="Sai";
+Use?
+	= Variable stores-a-value in program
+	
+=*** In Python-vars, we can store any type of value(directly)
+(dtype not-req in Py, taken-auto)
+Ex:- int,
+	float,
+	str,
+	boolean,
+	complex
+	etc...
+
+=**> Assigning Variable-value:- (LHS=RHS)
+= Using assignment-operator(=), we can assign/stored a value to variable
+		a=10;
+	(LHS-var = RHS-value/obj)
+Ex:-
+	rollno=1001;		#int-value
+	name="Sai";			#str-value
+	height=6.0;			#real-value (float-value)
+
+
+"Assignment"
+------------------
+##Program (Demo4.py)
+#Program to demo variable assignment with Student-Data 
+
+rollno=1001;		#integer-value
+name="Sai";			#string-value
+height=6.0;			#real-value (float-value)
+
+print("Student-Details");
+print("Roll No :",rollno);
+print("Name :",name);
+print("Height :",height);
+
+NOTE:-
+=> LHS=RHS (variable-assignment)
+(RHS-value is assigned to LHS-var)
+
+
+
+-----------------
+**Vars-Sp-case**
+-----------------
+==> Multiple Variable Assignments:-
+= Python allows/supports multiple-var-Assignment at-a-time in 2-cases,
+Ex:
+a=b=c=10;	#multi-vars & same-single-val
+a,b,c=11,22,33; #multi-vars & diff-vals(, operator)
+			 
+
+#Program (Demo5.py)
+#Program to demo multiple-assignments (Demo5.py)
+
+a=b=c=10;		#multiple-vars & same-value
+rollno,name,height=1001,"Sai",6.0;	
+#multi-vars & diff-vals
+
+print(a);
+print(b);
+print(c);
+
+print("\nStudent-Details ::");
+print(rollno);
+print(name);
+print(height);
+print()
+print(rollno,name,height)
+
+
+NOTE:-
+====> ,(comma) 2-uses
+	1) print() with ,	Ex:- print(a,b,a+b)
+	2) multi-var-assign
+
+
+
+***(next-fundametal)***
+---------------------------
+==>> ****Datatypes in Python:- 
+= Data means "information"
+= Type means "which type of information"
+
+**Def:-
+	= Which type of information is accepted, stored, processed and displayed in program is represented by data-type
+	Ex:-
+	10,20 --------> int-type 	(accept)
+	a=10; b=20;					(store)
+	sum=a+b						(process)
+	print(sum) -----> int-type	(display)
+	
+
+NOTE:-
+=** In Python, storing data in variables, we do-not require datatypes (taken-auto)
+Ex:-
+	rollno = 1001; (int-dtype)
+	name = "Sai";  (str-dtype)
+	height = 6.0;  (float-dtype)
+
+=* Here based on the value stored in variable, data-type is taken auto. into consideration
+
+(IQ)=*** This feature is called "Dynamically-Typed" prog.lang.
+(based on the value , dtype is taken auto....)
+
+NOTE:-
+=** other-langs:- (C,C++,Java,.net) => compulsory
+	int a=10;
+	float b=5.6;
+
+
+***(Python Datatypes Classification)***
+------------------------------------------
+==> Python Datatypes are Classified into 2-types::-
+==Diagram==
+A) Standard dtypes
+B) Derived dtypes
+
+A) Standard dtypes(5):-
+(Pre-defined/In-built/System-defined/Basic/Primary/Primitive/Base)
+	1) int
+	2) float
+	3) complex
+	4) bool
+	5) str
+
+-----------------------------
+B) Derived Datatypes(9)
+(they are derived from standard-datatypes)
+	6) bytes	(old) 0 to 255		#Collections-dtypes
+	7) bytearray (old) 0 to 255
+	8) range
+	9) list (*)
+	10) tuple (*)
+	11) set (*)
+	12) frozenset (*)
+	13) dict (*)
+	14) NoneType
+
+
+
+
+
+
+
+
+
+
+

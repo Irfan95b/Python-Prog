@@ -1,0 +1,444 @@
+Date:- 05-DEC-2024 (THU(3))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***((Py-Tech-Concepts))**
+===========================
+==> Python in-built utility functions::-
+(3-Basic-funcs)
+---------------------
+a) type() ---> it gives datatype of variable/value
+Ex:- 	type(a)
+
+b)** id() ---> it gives unique-id(Address) of variable/value in memory
+Ex:- 	id(a)
+	a=10
+	a[]------------------>[10]
+	(var-name)			(value/obj)
+						(unique-id/addr)568974851235
+						id(a)----->
+
+
+c) print() ---> prints any-data on o/p-screen
+
+#Program (Demo51.py)
+#Program to demo python-variables with type(), id() and print()
+
+#a=10
+#a=5.6
+#a='Sai'
+#a=True
+a=5+6j
+print(a)			#value
+print(type(a))		#dtype
+print(id(a))		#uniquie-addr(auto-addr)
+
+
+==Diagram==
+= This addr is given auto. by PVM(dynamic)
+= This addr is dynamic(changes from prog to prog)
+
+
+=============================================================
+(*******)
+==> Standard-Datatypes(Standard):-
+1) int datatype:-
+= It represents integer-values 
+(+ve, -ve or 0)
+Ex:-
+	a=10;
+	a=-10
+	a=0;
+
+**sp-case** 
+--------------
+(Int-Num-Sys) --->maths-concept
+(Integer-Number-systems) -> mathematics-concept
+=> Python supports 4-types integer-number-system
+-----------------------------------------------------------------
+a) Decimal (0-9)	(Base-10) 	-> it is default-num-system
+b) Binary (0-1)		(Base-2) 	Ex:- 0b1010 (or) 0B1010
+c) Octal (0-7)		(Base-8) 	Ex:- 0o123 (or) 0O123	 
+d) Hexa-Decimal 	(Base-16) 	(0-15)->(0-9,A,B,C,D,E,F)	 
+								Ex:- 0x1ae (or) 0X1ae
+-----------------------------------------------------------------
+Ex:-
+	10(in-Decimal) -----> 0b1010(in-binary)
+	==Diagram==
+
+
+--------------------------
+***Num-Sys-Convr-funcs***
+--------------------------
+==> Integer Number-System-Conversion Funcs:-
+= Converting one number-system to another
+(predefined-functions)
+a) bin() => Converts other number-system to Binary value
+b) oct() => Converts other  number-system to Octal value
+c) hex() => Converts other number-system to Hexa-Decimal-val
+(decimal-convr is auto.(Def-num-sys))
+
+
+##Program (DatatypeEx1.py)
+#Program to demo int-dtype with number-system-conversions
+'''
+a=10
+print(a)
+print(type(a))
+print(id(a))
+
+print()
+a=-10
+print(a)
+print(type(a))
+print(id(a))
+
+print()
+a=0
+print(a)
+print(type(a))
+print(id(a))
+'''
+print()
+#sp-cases (def.num.sys is decimal-num-sys)
+a=10
+print(a)
+a=0b1010
+print(a)
+a=0o123
+print(a)
+a=0x1ae
+print(a)
+
+print()
+#sp-case(conversion-funcs)
+print(bin(10))
+print(oct(83))
+print(hex(430))
+
+
+NOTE:-
+------------
+10(Decimal) ---convert----> Binary(0,1) 1010
+Ex:-
+	10/2 -----> 0
+	5/2 -----> 1
+	2/2 -----> 0
+				1
+
+
+
+
+2) float datatype:-
+-----------------------
+= It represent values with decimal-point-value
+(Real-nums/values) 
+(2-types)
+Ex1:-
+	a=123.45; (Standard-Notation)
+Ex2:-
+	a=1.5E3; (It means *(into) 10 power 3) 	
+	#1.5 * 10power3 ==> (1.5 * 1000 ====> 1500.0)
+(E->Extended to power of 10) (Scientific-Notation)
+
+
+3) Complex datatype:-
+-----------------------
+= In mathematics, complex numbers are given with i
+(imaginary number -> i)
+(used in Scientific-Applications)
+= Here we use j [sqrt(-1)]
+Ex:
+	(a+bj) 
+	(a is Real-Part)
+	(bj is Imaginary-Part)
+= a, b can be Integers or Floating values
+
+Ex:-
+	5+6j;
+	5.5+6.5j;
+	
+
+
+4) bool datatype:-
+-----------------------
+= It represents boolean values (only 2-values)
+Ex:-
+	True(1)
+	False(0)	#(T,F are capital)
+
+
+5) str datatype:-
+-----------------------
+= It represents string-value (Coll.of.chars)
+= It is given in quotes
+('', "", '''...''')
+(single/double/triple)
+	'....'	--->single-word
+	"...."	--->multi-words
+	'''........'''	---> multi-lines(compulsory)
+Ex:-
+	'Sai'
+	"Welcome to Python"
+	'''
+		#101, St.No.9,
+		Hyd(TS)
+		India
+	'''
+
+
+##Program (DatatypeEx2.py)
+#Program to demo float,complex,bool and str datatypes
+
+'''
+#float-dtype
+a=123.45
+print(a)
+a=1.5E3         #1.5 * 10(3)
+print(a)
+a=1.5E-3
+print(a)
+'''
+
+'''
+print()
+#complex-dtype
+a=5+6j
+print(a)
+a=5+6.5j
+print(a)
+a=5.5+6.5j
+print(a)
+'''
+
+'''
+print()
+#bool-dtype
+a=True
+print(a)
+a=False
+print(a)
+'''
+
+
+print()
+#str-dtype
+a='Sai'
+print(a)
+a="Welcome to Python"
+print(a)
+a='''
+    #101, St.No.9,
+    
+    HimayathNagar,
+    
+    Hyd(TS)-59,
+    
+    India
+'''
+print(a)
+
+
+=============================================
+***New-Topic***
+------------------
+(****)
+==> Typecasting in Python:-
+(type means datatype)
+(casting means converting)
+=> def:-
+	= Converting one datatype value into another dtype is called as typecasting
+	
+=* Also known as Type-Coersion in Python 
+(generally Type-Conversion/Type-Casting)
+
+NOTE:- 
+(==Diagram==)
+Ex:-(Super-Market-Bill)
+Buy Vegetables
+ 195.10/- (actual-bill-amt) float-dtype
+	|
+	|
+	|
+	|
+	|
+  195/-  (paying-bill-amt) int-dtype
+(float ----to----> int convr..)	
+
+(***)
+= Python provides Inbuilt Type-Conversion-functions,
+(Type-Convr-Funcs)
+====================
+1) int()	--> converts other-dtypes to int-dtype
+2) float()	--> converts other-dtypes to float-dtype
+3) complex() --> converts other-dtypes to complex-dtype
+4) bool()	--> converts other-dtypes to bool-dtype
+5) str()	--> converts other-dtypes to str-dtype
+
+
+
+
+#Program (TypeCastingEx1.py)
+#Program to demo Typecasting with python-functions
+#Program (TypeCastingEx1.py)
+#Program to demo Typecasting with python-functions
+
+
+'''
+#int() conver-func
+a=int(10)
+a=int(100.8)     #complete deci-part is deleted
+a=int("1000")
+#a=int("100.5")		#ValueError
+#a=int("hi")       #ValueError
+#a=int(True)
+a=int(False)
+#a=int(5+6j)    #complex is not-convertible
+print(a)
+print(type(a))
+'''
+
+
+'''
+print()
+#float()
+a=float(10)     #deci-point(.) is added
+a=float(10.8)
+a=float("100")
+#a=float("hi")       #ValueError
+a=float(True)
+a=float(False)
+#a=float(5+6j)    #complex is not-convertible
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+#complex()
+a=complex(10)			#0j is added extra
+a=complex(10.8)
+a=complex("100")
+#a=complex("hi")       #ValueError
+a=complex(True)
+a=complex(False)
+a=complex(5+6j)
+a=complex("15+6j")
+a=complex(5,6)
+a=complex(5.5,6.6)
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+#bool()
+a=bool(1)
+a=bool(0)
+a=bool(10)      #non-zero is True & any zero is False
+a=bool("hi")    #**sp-case any-string is T & empty-str is F
+a=bool("False")
+a=bool("")      #w.o any chars is empty-string
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+#str()
+a=str(10)
+a=str(10.5)
+a=str("hi")
+a=str(True)
+a=str(5+6j) #**sp-case
+print(a)
+print(type(a))
+'''
+
+
+#real-time usage of str() to int()
+print(10+20)
+print("10"+"20")
+print(int("10") + int("20"))
+
+
+
+
+
+***(Derived-datatypes)***
+------------------------
+===>>> NoneType datatype:- 
+= None means nothing or no-value 
+Ex:-
+	s1 = None;
+=** "None" is value & its datatype is "NoneType"	
+
+
+##Program (NoneTypeEx1.py) 
+#Program to work with none-datatype
+
+a=10;
+print(a)
+print(id(a))
+print(type(a))
+
+print()
+a=None
+print(a)
+print(id(a))
+print(type(a))
+
+print()
+a=20
+print(a)
+print(id(a))
+print(type(a))
+
+
+
+
+(***)
+=========================================================
+==> Constant-Variables in Python:-
+= Constant means fixed value in variables (Literal)
+(cannot be modified)
+= It is not supported in Python(py)
+= However, we can use constant variables in Block-Letters
+(just for understanding)
+Ex:-
+	PI=3.14;		#but still we can modify them...
+	MAX=100;
+	MIN=35;
+= BLOCK-letters is just a standard(not-compulsory)
+= However we can change the value of variables with new-values
+Ex:-
+(Practice in)
+(py-inter-mode)
+------------------
+>>> PI=3.14
+>>> print(PI)
+3.14
+>>> PI=3.20
+>>> print(PI)
+3.2
+>>>
+
+
+NOTE:-
+(other-langs)
+c/c++ (const int a=10; ----> fixed-var-value a=a+10; #Error)
+java (final int a=100; ----> a=200; #Error-in-java)
+
+

@@ -1,0 +1,459 @@
+Date:- 06-DEC-2024 (FRI(4))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***((Py-Tech-Concepts))**
+===========================
+***next-fundamental***
+--------------------------------
+==> Escape Sequence Characters:-
+= They are Special-chars, 
+= combination of 2-chars (\char) (combi)
+= They have sp-meaning & sp-usage in program
+
+1) \n (new-line character)
+= It takes cursor to next-line
+Ex:-
+	print("Sai\nRam\nKumar");
+
+//Program (EscSeqChars.py)
+(#Program to work with EscSeqChar's)
+
+2) \t (tab-space-char, takes 8 spaces at a time)
+Ex:-
+print("Sai\tRam\tKumar");
+
+3) \b (back-space-char ---> takes 1 space back)
+Ex:-
+print("Hello World\b\bks");
+
+4) \r (carriage-return-char, takes cursor to begin of same-line)
+Ex:-
+print("Jack\rB");
+
+=> Sp-cases:-
+	\' (single-quote)
+	\" (double-quotes)
+	\\ (back-slash)
+
+
+##Program (EscSeqChars.py)
+#Program to work with Escape-Sequence-Characters
+
+print("Sai\nRam\nKumar");
+print("Sai\tRam\tKumar\tAjay"); 
+#tab-space-count is from begining of line
+
+print()
+print("Hello World\b\bks");		#Hello Works
+print("Jack\rB");		#Back
+
+
+#sp-cases ',",\ inside string
+print()
+print('Hello\'World');
+print("Hello\"World");
+print("Hello\\World");
+
+
+NOTe:-
+= same-quotes with-in same-quotes use back-slash(esc-seq-char \)
+
+NOTE:-
+(1-things multiple-uses)
+\(back-slash)
+	i) \ continuation-char
+	ii) \ esc-seq-char
+
+
+
+=======================================================
+**==>> Range datatype:- (Derived datatype)
+**==>> Range datatype:- (Derived datatype)
+= It generates range of values(numbers)
+(Sequence-of-vals)
+= range() func is used here
+==Diagram==
+Ex:- range() is used here
+	range(beginval,endval,stepval)
+	
+	r1=range(1,11,1);	#1 to 10(last-value not taken)
+	
+(range provides indexes)
+=* We can access values from range-coll, using indexes
+(0 to n-1)	First->Last  Left-->Right	Farward		+ve
+(-1 to -n)  Last->First	 Right-->Left	Backward	-ve
+Ex:-	
+r1=range(11,22,33,44,55) ---> 5-values(Step-value+11)
+		  0  1  2  3  4
+		 -5	-4 -3 -2 -1
+	r1[0],r1[-5]			----> [] is index-operator/subscript-oper
+	r1[1],r1[-4]	
+	r1[2],r1[-3]	 
+	r1[3],r1[-2]
+	r1[4],r1[-1]
+		 
+NOTE:-	
+= Range Coll. values are Immutable-object/coll 
+(org-coll/data cannot be modified ow. we get Error/new-value)
+
+
+##Program (RangeDatatypeEx1.py)
+#Program to work with range-coll-datatype
+
+'''
+r1 = range(1,6,1)       #1,2,3,4,5
+print(r1);
+print(type(r1));
+
+#using indexes access
+print(r1[0])
+print(r1[1])
+print(r1[2])
+print(r1[3])
+print(r1[4])
+#print(r1[100])		#IndexError (index out-of-range)
+print()
+print(r1[-1])
+print(r1[-2])
+print(r1[-3])
+print(r1[-4])
+print(r1[-5])
+#print(r1[-100])	#IndexError
+print()
+'''
+
+
+
+'''
+#access range-coll-values using loops
+r1 = range(1,10,2)
+print("Range values with loop")
+for i in r1:    #r1-->[1,3,5,7,9]
+	print(i);
+
+print("Out of loop")
+
+'''
+
+
+'''
+print();
+r1 = range(10,20);	   #10 to 19  (Def-step is +1)
+print(r1)
+for i in r1:
+	print(i);	
+'''
+
+
+'''
+print()
+r1 = range(10,20,2);     #10,12,14,16,18 (Step-value=2)
+for i in r1:
+	print(i);
+'''
+
+'''
+print()
+r1 = range(10,20,3);    #10,13,16,19
+for i in r1:	
+	print(i);
+'''
+
+
+'''
+#sp-cases
+print()
+r1 = range(20);     #def-begin(0) to 20, def-step(+1) 
+                    #range(0,20,+1)
+for i in r1:	
+	print(i);
+'''
+
+
+'''
+print()
+r1 = range(20,10,-2);  
+for i in r1:	
+	print(i);
+'''
+
+
+'''
+print()
+r1 = range(-10,-20,-2);  #[-10,-12,-14,-16,-18]
+for i in r1:	
+	print(i);
+'''
+
+
+'''
+#sp-cases
+print()
+r1 = range(1,20,-2);     #range not generated
+for i in r1:	
+	print(i);
+#1,20(forward-range) but -2(Backward-step)
+'''
+
+
+'''
+print()
+r1 = range(20,1,2);     #range not generated
+for i in r1:	
+	print(i);
+#20,1(backward-range) but +2(Farward-step)
+'''
+
+'''
+#sp-case
+#r1 = range(10)		#range(0,10,+1)
+r1 = range(-10)		#range(0,-10,+1) is not-generated
+for i in r1:
+	print(i)
+'''
+
+
+
+'''
+#range is immutable-coll(org-data cannot be modified o.w Error)
+r1 = range(1,11);    #1 to 10 values		    
+print(r1[0])
+print(r1[9])
+#r1[0]=100;		#TypeError (range values are immutable-obj)
+'''
+
+
+
+#sp-case
+#r1 = range(1,6,1)       #r1---->1,2,3,4,5
+r1 = range(-1,-6,-1)
+for i in r1:
+    print(i)
+    
+    
+
+
+
+NOTE:-
+***= best-way to access values of range-coll is with loops
+Ex:-
+	for i in r:		#each-value from "r" is assigned to "i"
+		print(i);
+(#when no-values in range(r) then come out of loop)
+
+NOTE:-
+1)	range(Begin-value,End-value,Step-value)
+Begin-value(not-compulsory) -> default-value(0)
+End-value(compulsory) -> not-included
+Step-value(not-compulsory) -> default-value(+1) [+ve or -ve]
+
+2) best-way to access values of range-coll is with loops
+Ex:-
+	for i in r1:	#each-value from "r1" is assigned to "i"
+		print(i);			#and loop-stmts are exec.
+(#when no-values in range(r1) then come out of loop)
+
+
+3) Trying to access, range-coll-value with index-out-of-range, we get "IndexError"
+
+
+
+NOTE:-
+= list/tuple/set/frozenset/dict we have separate chapters
+
+
+==> Python Fundamentals(***)
+= Fundamentals means basics of writing a Python Program
+= They are as follows(8),
+	A) Identifiers
+	B) Reserved Words (Keywords)
+	C) Datatypes
+	D) Conversions
+	E) Slicings(*****)
+	F) Type-Casting
+	G) Escape Sequence Chars (\char) Ex:- \n, \t, \b etc
+	H) Constants (Literals) Ex:- PI=3.14; MIN=35; MAX=100;
+	
+	
+
+
+
+(((((************************)))))
+=====================================================================
+(Python Memory Allocation & De-allocation)
+==> Py Variable Memory Allocation::-
+(3-cases)
+==Diagram==
+a) Same-var diff-values::-
+Ex:-
+	a=10
+	a=10.5
+	a="Hello"
+	print(a)   #latest-value is taken
+	
+b) Diff-vars Same-value::-
+	a=10
+	b=10	(re-usability)
+	a[]---------->[10]<----------b[]
+	print(a,b)
+	print(id(a),id(b))	#same-value & same-addr
+	
+c) Diff-vars diff-values::-
+	a=10		a[]------->[10]
+	b=20		b[]------->[20]
+	print(a,b)
+	print(id(a),id(b))	#diff-value & diff-addr	
+	
+
+##Program (PythonVarMemoryAlloc.py)
+#Program to demo Python Variable Memory allocation & de-allocation
+##Program (PythonVarMemoryAlloc.py)
+#Program to demo Python Variable Memory allocation & de-allocation
+
+'''
+#case1
+#Same-var diff-values(latest-value)
+a=10
+a=10.5
+a="Hello"
+print(a)
+'''
+
+'''
+#case2
+print()
+#Diff-vars Same-value
+a=10
+b=10
+print(a,b)
+print(id(a),id(b))
+'''
+
+#case3
+print()
+#Diff-vars diff-values
+a=10
+b=20
+print(a,b)
+print(id(a),id(b))
+
+----------------------------------------------------------------
+
+*** PY.VAR.DEL:::-
+------------------------
+***(Py Var memory de-allocation)
+==> Deleting Var.Reference:-
+=* del-keyword or del-statement is used to delete reference-var
+==diagram==
+Ex:-
+	a=10
+	b=10
+	a[]--------->[10]<--------b[]
+	del a
+	   -------->[10]<--------b[]
+	(only a-var-ref is deleted but not b-ref-var)
+	(only var-ref-name is deleted but not value)
+	
+Syntax:-
+	del varname;
+	del var1,var2,var3,....;  #del a,b,c;
+
+=** after deleting var-ref, trying to access it, we get "NameError"
+(however, we re-use that same-value for other-vars)
+Ex:-
+	c=10
+	d=20
+
+##Program (DelRefVar.py)
+#Program to demo Reference Deletion
+##Program (DelRefVar.py)
+#Program to demo Reference Deletion
+
+'''
+#case-1
+a=10
+b=20
+print(a,b)
+print(id(a),id(b))
+
+del a
+del b
+print(a,b)     #NameError
+'''
+
+'''
+#case-2
+c=100
+d=200
+print(c,d)
+del c,d;
+print(c,d)     #NameError
+'''
+
+''''
+#case-3
+a=10
+b=10
+print(a,b)
+print(id(a),id(b))
+del a
+#print(a)     #NameError
+print(b)
+'''
+
+
+
+--------------------------------------------------------------------
+==> Python-Immutability(values):-
+= In python, every value of is an object
+Ex: 10 is an obj (class int), 
+	5.6 is an obj(class float)
+
+def:-	
+	**= Immutability, means org-data cannot be modified(value) o.w Error but can re-assign new-value
+==Diagram==
+Ex:-
+a=10;			a[]		>[10]
+a=a+10;			a[]----->[20](10 is Immutable, not-changed)
+
+##Program (ImmutableValues.py)
+#Program to demo Immutable Values
+
+=** trying to modify org-data, we get new-data(obj)
+NOTE:-
+1) Mutability means Org-data can be Modified
+2)** id(unique-addr) it is given auto. by PVM for any value/obj used in program (dynamic-value)
+
+##Program (ImmutableValues.py)
+#Program to demo Immutable Values
+
+a=10
+print(a)
+print(id(a))
+a=a+10
+print(a)
+print(id(a))
+
+
+print()
+b=10        #re-used
+print(b)
+print(id(b))
+
+
+NOTE:-
+=** In Python memory, data/value/obj is re-used 
+(no-wastage of memory-space)

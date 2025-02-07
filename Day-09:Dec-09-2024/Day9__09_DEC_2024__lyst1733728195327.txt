@@ -1,0 +1,233 @@
+Date:- 09-DEC-2024 (MON(0))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+===========
+***New-Topic***
+------------------
+===>> Standard input() function:-
+=*** in prog, we are giving direct-input-vals
+Ex:-
+	a=10	#static-values(given-before.exec)
+	b=20
+	sum=a+b
+	print(a+b) #same-o/p every-time
+	
+**= input() is used to read/accept data directly from keyboard, while running the program (dynamic-input)
+= input() reads any data from keyboard as str-format only
+**= Hence, Typecasting is also Required here
+(type-conversion funcs)
+i.e,
+	int(), float(), bool(), complex() etc...
+Ex:
+	a = int(input("Enter A-value :: "));
+	b = int(input("Enter B-value :: "));
+
+
+##Program (DynamicInput.py)
+#Program to accept dynamic input from keyboard
+##Program (DynamicInput.py)
+#Program to accept dynamic input from keyboard
+
+'''
+#sum of 2-no's
+a = input("Enter A-value = ");
+b = input("Enter B-value = ");
+a = int(a)
+b = int(b)
+sum=a+b;
+print(sum)
+'''
+
+'''
+print()
+a = int(input("Enter A-value = "));
+b = int(input("Enter B-value = "));
+sum=a+b;
+print(sum)
+'''
+
+'''
+#other-dtype-input-values
+a = int(input("Enter int-value = "));
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+a = float(input("Enter float-value = "));
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+a = complex(input("Enter complex-value = "));
+print(a)
+print(type(a))
+'''
+
+'''
+print()
+a = bool(input("Enter bool-value = "));
+print(a)
+print(type(a))
+'''
+
+print()
+a = input("Enter str-value = ");
+print(a)
+print(type(a))
+
+
+
+NOTE:-
+= Give Proper-input-value from keyboard o.w we get "ValueError"
+
+
+
+
+=================================================================
+(***)
+(Theory-topic)
+==> 2-Types of Input-Values in Program::-
+= In python program, we can given input in 2-ways,
+	A) Static-values
+	B) Dynamic-Values
+==Diagram==
+	
+A) 
+i)Static-i/p-values, are given before running the program, directly while coding the program	
+ii) Ex:-
+		a=10
+		b=20
+iii)
+=** Static-values are SAME/COMMON-O/P for every-execution
+
+	
+B) 
+i) Dynamic-i/p-values, are given While running the program, using input() function ---> during-exec
+ii) Ex:-
+		a=int(input("A-value = "));
+		b=int(input("B-value = "));
+iii)
+=** Dynamic-i/p-Values are DIFFERENT/SEPERATE O/P for every-execution
+
+
+NOTE:-
+1) scanf() ----> C
+2) cin>>	-----> C++
+3) Scanner-class -----> Java
+
+
+*****
+very-imp
+*****
+==> eval() sp-function::-
+= It is special function, used to evaluate mathematical-expressions
+=** It takes any type-of-data as input & provides respective data-type value
+=** It takes every-input as string-only
+2-Uses??
+--------
+	i) Evaluate mathematical-expressions
+	ii) Getting any type-of-data as input
+	(auto-dtype-convr)
+
+Ex1:-
+	a = eval("11+22+33");		##66(int)
+	print(a);
+	i = eval("10")		##10(int)
+	
+=** eval() func performs auto-type-conversion	
+
+##Program (EvalFunction.py)
+#Program to work with eval()
+##Program (EvalFunction.py)
+#Program to work with eval()
+
+'''
+#evaluate-mathematical-expression (calci)
+pi=3.14
+r=5
+expr = input("Enter any mathematical-expression :: ");
+result = eval(expr)
+print(result)
+print(type(result))
+'''
+
+
+print()
+#provide any type of data
+a = eval(input("Enter any-type-of-value = "));
+print(a)
+print(type(a))
+
+
+
+NOTE:-
+= for eval() give i/p as string-only
+Ex:-
+	eval(str)
+
+
+
+===================================================================
+***New-Topic***
+==================
+(*****)
+===>>> Control-Structures or Flow-Controls in Python:-
+= Control means <<Condition>>:	Ex:- (a<b) T/F
+= Structure means indented-block-of-code
+Def:-
+	Executing an indented-block-of-code, based on <<condition>> is known as Control-Structure
+==Diagram==	
+Ex:-
+	<<condition>>: --->header(:)	(T/F)
+		stmt1;
+		stmt2;	----> suite(indented-block)
+		stmt3;
+		.....
+
+	
+= In Python, we dont have blocks with {}
+= Here we have indented-block-of-code
+(single/multiple stmts with equal spaces from left)
+
+***= Flow-control means the order in which statements are executed in program
+
+
+
+**CS/FC classification**
+---------------------------
+=> CS(Flow-Controls) in python are classified into 3-types,
+==Diagram==
+	A) Conditional stmts (Branching-Stmts)
+	(Executes stmts 0 or 1 time only)
+		= simple-if
+		= multiple-if
+		= if-else
+		= nested-if
+		= if-elif-else
+	B) Iterative stmts	(Looping-Stmts/Loops/cyclic)
+	(Executes stmts 0 or more times)
+		= for
+		= while
+		= nested-loops
+	C) Transfer stmts	(Jumps-Stmts)
+	(jump from 1-line to another-line)
+		= break
+		= continue
+		= pass
+
