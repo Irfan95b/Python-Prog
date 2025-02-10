@@ -1,0 +1,428 @@
+Date:- 11-DEC-2024 (WED(2))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+[CS/FC contd...]
+***A) Conditional stmts:-
+--------------------------
+= They are also called as Branching stmts
+= They executes indented-block-of-code 0 or 1 time only 
+
+i) simple-if statement:-
+Syntax:-
+	if (condition):		#colon: is mandatory but not ()
+		stmt1;
+		stmt2;	
+		stmt3;
+	.....
+	next-line;
+	
+= Here if condition is True then "statements(block)" are executed o.w not-executed for False (and comes to next-line)
+
+
+##Program (IfStmt1.py)
+#Program to demo if-stmt
+
+'''
+#if-stmt with single-stmt
+name = input("Enter any name : ");
+if name=="Sai":
+	print("Hello :",name,"Good Morning");
+
+print("Take care n Bye!!");
+'''
+
+
+'''
+#if with multiple-stmts
+name = input("Enter any name : ");
+if name=="Sai":
+	print("Hello :",name,"Good Morning");
+	print("Have a great day!!");
+
+print("Take care n Bye!!");
+'''
+
+
+
+#sp-case
+#Header & Suite in single-line
+#single-suite-stmts (CS/FS in single-line)
+a = int(input("Enter any +ve integer :: "));
+if (a>0): print("Given Number is +ve Number");
+print("End of the Prog");
+
+
+
+
+ii) Multiple-if Statements::-
+= Here we use, multiple-if Statements one after the another
+Syntax:-
+	if <<condition1>>:
+		stmts;
+		stmts;
+	if <<condition2>>:
+		stmts;
+		stmts;
+	if <<condition3>>:
+		stmts;
+		stmts;	
+	next-line;
+	......
+	......	
+= Here, whichever condition is True, its corresponding indented-statements(block) are executed & comes to next-line o.w smts not-executed for False		
+
+
+#Program (MultipleifStmt1.py)
+#Program to demo Multiple-if stmts with +ve,-ve,0
+
+
+num = int(input("Enter any integer-value :: "));
+if num>0:
+    print("Given Num is +ve");
+if (num<0):
+    print("Given Num is -ve");
+if (num==0):
+    print("Given Num is ZERO");
+
+print("End of the Program");
+
+
+
+
+(***)
+"Assignments"
+-----------------
+#Program (MultipleifStmt2.py)
+#(Program to demo Multiple-if stmts with Even,Odd,Neither of them)
+Hint:-
+	Even-num if (num%2==0)
+	Odd-num if (num%2!=0)
+	Neither Even nor Odd if (num==0)
+(***small limitation check & do-it)
+
+
+
+iii) if-else statement:-
+(Here we have 2nd option also)
+Syntax:-
+	if condition:
+		True-Stmts;
+		.....
+	else:					#here : is mandatory
+		False-Stmts;
+		.....
+	.....
+	next-line
+	.....
+	
+=*** Here if condition is true then True-Stmts are executed,
+if condition is False then False-Stmts are executed
+(and comes to next-line)
+
+
+##Program (IfElseStmt1.py)
+#Program to demo if-else stmt
+
+'''
+#if-else single-stmt
+name = input("Enter any name : ");
+if name=="Sai":
+	print("Hello :",name);
+else:
+	print("Welcom : New User!!");
+	
+print("End of Program!!");
+'''
+
+
+'''
+#if-else with multi-stmts
+name = input("Enter any name : ");
+if name=="Sai":
+	print("Hello :",name);
+	print("Have a nice day!!");
+else:
+	print("Welcome : New User!!");
+	print("Register your Name...");
+
+print("Take care n Bye!!");
+'''
+
+
+#sp-case
+#single-suite-stmt (Header & Suite in single-line)
+num = int(input("Enter any Integer-Number : "));
+if num==0: print("Given Number is 0");
+else: print("Given Number is NON-Zero(+ve/-ve)");
+
+print("End of the Prog")
+
+
+
+
+"Assignment"
+---------------
+#WAP to accept age of a person as input & display "Eligible for Voting or not"
+##Program(IfElseStmt2.py)
+#Program to demo if-else stmt (IfElseStmt1.py)
+
+'''
+age = int(input("Enter your Age : "));
+if (age>=18):
+	print("Your are Eligible for Voting");
+else:
+	print("You are NOT-Eligible for Voting");
+	
+print("End of Program..!!");
+'''
+
+
+iv)
+=> Special-Case:-
+==> Nested if's:-
+(if with-in if)
+or
+(if with-in else)
+= We can use "if-stmt" inside another if-stmt or another else-stmt as follows,
+
+Syntax:-
+if condition1:(T)
+	stmts;
+	if condition2:(T)
+		inner-stmts;
+		.....
+else:
+	stmts;
+	if condition3:
+		inner-stmts;
+		.....
+		
+=** here if both conditions(outer-if,inner-if) are True then only its inner indented(block) stmts are executed o.w else with if-stmts are executed
+
+		
+##Program (NestedIf1.py)
+#Program to check biggest of 3 numbers using nested-if)
+
+print("Enter 3-diff values :");
+a=int(input("Enter A value :: "));
+b=int(input("Enter B value :: "));
+c=int(input("Enter C value :: "));
+
+if (a>b):
+    if (a>c):
+        print("A is Biggest");
+    else:
+        print("C is Biggest");
+else:
+    if (b>c):
+        print("B is Biggest");
+    else:
+        print("C is Biggest");
+
+
+print("End of the Program");
+
+
+
+"Assignments" (NestedIf2.py)
+-----------------------------
+#WAP to print smallest of 3-diff-numbers using nested-if stmts
+(< symbol)
+(Smallest-msg)
+
+
+
+**V) if-elif-else:-
+Syntax:-
+	if condition1:
+		stmts1;
+	elif condtion2:
+		stmts2;
+	elif condtion3:
+		stmts3;
+	....
+	....
+	else:
+		F/stmts;
+	next-line;(comes-out-of-CS)
+......
+= Here linearly one after the other conditions are checked
+= Whichever condition is true, corresponding stmts are executed and remaining conditions are skipped till end
+= If no-condition is true then last else part is executed
+
+##Program (IfElifElse1.py)
+#Program to accept 5 subject marks of a student and print the grade Distinction,1st-class,2nd-class,3rd-class or Fail
+#Program to demo If-elif-else
+
+print("Enter 5 Subject Marks :");
+s1 = int(input("Sub1 : "));
+s2 = int(input("Sub2 : "));
+s3 = int(input("Sub3 : "));
+s4 = int(input("Sub4 : "));
+s5 = int(input("Sub5 : "));
+
+total=s1+s2+s3+s4+s5;
+avg = (total)/5;
+
+print("Total-Marks : ",total);
+print("Average-Marks : ",avg);
+
+if (avg>=75):
+	print("Distinction");
+elif (avg>=65):
+	print("1st-Class");
+elif (avg>=50):
+	print("2nd-Class");
+elif (avg>=35):
+	print("3rd-Class");
+else:
+	print("Failed");
+	
+print("End of Program");
+
+
+#"Assignment"(if-elif-else) (IfElifElse2.py)
+-----------------------------------------------
+#WAP to accept age of person and print following msgs
+(Baby, Kid, Teenage, Adult, Oldage)
+if personage >=65
+elif personage>=18
+elif personage>=12
+elif personage>=5
+else "Baby"
+
+
+NOTE:-
+= if-elif-else stmt is very efficient & fast when compared to multiple-if-stmts (or) nested-if-stmts because here other-conditions are not-checked un-necessarily
+
+
+
+================================================================
+***B) Iterative Statements:- 
+(Looping-stmts) or cyclic-stmts
+= They are used to execute group-of-statements(indented block-of-code) 0 or more times based on condition/values
+= We have 2-types of Iterative-Stmts,
+	i) for loop
+	ii) while loop
+(do-while or foreach-loop are not in python)
+
+
+i) for loop:-
+-------------
+= This loop is executed based on collection-of-values
+Ex:-
+Strings, List, Tuple, Set, Dictionary, Arrays, Range etc
+
+Syntax:-
+	for x in coll-of-values:  [11,22,33]
+		stmts;
+		.....
+		.....
+	
+= Here loop group-of-stmts are executed for each-value in collection
+(each time coll-value is assigned to loop-var(x))
+
+##Program (ForLoopEx1.py)
+(Program to deme Python For Loop)
+##Program (ForLoopEx1.py)
+#Program to demo for-loop
+
+'''
+#using str
+#s1 = "Hello";		#coll.of.chars
+s1="Welcome";
+for x in s1:
+	print(x);
+print("End of For Loop")
+'''
+
+
+'''
+#range()
+for x in range(10):     #0 to 9
+	print("Sai");
+'''
+
+'''
+print()
+#N-natural-nos
+for x in range(1,101):     #1 to 10
+	print(x);
+'''
+
+
+'''
+#for loop single-suite-stmt (header & suite in single-line)
+for x in range(1,11): print(x*x);
+'''
+
+
+
+#for loop with list-coll
+for x in [11,22,33,44,55,66,77,88]:
+    print(x)
+
+print("Comes out of the Loop");
+
+
+
+
+**ii) while loop:-
+= This loop-stmts is executed(block-of-code) based on a condition (till it is false)
+(here we use loop-var initial-value, condition-check, incre/decre)
+
+Syntax:-
+	loop-var-inital-value;		------> (1) once
+	while condition(T/F):		------> (2) T/F
+		stmts;
+		stmts;			-------------->(3) block/body
+		.....
+		incre/decre; ----------------->(4)
+
+=*** step1(only-once)
+	steps2,3,4 (exec-multi-times) till step2 is False
+
+
+
+##Program (WhileLoopEx1.py)	
+#Program to demo using while-loop
+
+'''
+#printing N-natural-no's
+i=1;
+while i<=10000:
+	print(i);
+	i=i+1;
+print("End of While Loop");
+'''
+
+
+
+
+#while loop single suite stmt
+#Header & suite in single-line
+n = int(input("Enter N-value :: "))  #10
+i=1;
+while i<=n: print(i*i); i+=1;
+print()
+i=1;
+while i<=n: print(i*i*i); i+=1;
+
+print("End of the while-loop")
+
+
+
+
+
