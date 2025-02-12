@@ -1,0 +1,452 @@
+Date:- 12-DEC-2024 (THU(3))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+**Sp-case**
+------------
+**==> Infinite While-Loop:-
+= A loop which is always true is called Infinite Loop
+(never-ending-loop)
+Ex:-
+	while True:		#while 10==10: (10): ("hi"):
+		....
+		body;
+		....
+		....
+
+##Program (WhileInfiniteLoop.py)
+#(Program to demo Infinite-Loop while)
+
+i=1
+while True:
+    print(i)
+    i=i+1;
+    
+print("End of While Loop"); 
+	
+NOTE:-
+= (Ctrl+c) is used to break or come out of infinite loop
+(ctrl+Pause-break-key)
+
+
+
+==========================================================
+**sp-case-loops**
+-------------------
+==> Nested Loops:-
+= Using a particular loop inside another loop is called Nested-Loop
+(loop with-in loop)
+Syntax:-
+	outer-loop: ---> no.of.rows
+		....
+		inner-loop: 	---> no.of.cols
+			.....
+			.....
+			
+Ex:-
+for i in range(3):		#outerloop(i=0,1,2) ---> rows
+	for j in range(3):	#innerlloop(j=0,1,2) ---> cols
+		print(i,",",j,end="\t");
+	print();
+	
+
+
+NOTE:-
+(uses)
+= Nested-Loops are mainly used to represent data in the form of rows and columns, table-data, matrices data etc
+=** Here outer-loop represents no.of rows and inner-loop represents no.of columns
+
+##Program (NestedLoopEx1.py)
+#Program to demo Nested-Loops
+
+for i in range(5):			#outer-loop(0,1,2) => rows(i)
+	for j in range(5):		#inner-loop(0,1,2) => cols(j)
+		print(i,",",j,sep="",end="\t");
+	print("\n");
+	
+print("End of Program")
+
+ 	
+NOTE:-
+Ex:-
+	print("(",i,",",j,")",end="\t",sep="");
+
+
+
+============================================================
+***C) (Transfer Stmts) in Control Statements:- 
+(Jump Stmts)
+(jumping from one-line to another-line in prog...)
+(3-types)
+a) break
+b) continue
+c) pass
+
+
+A) break stmt:- 
+(mainly used in loops(for/while) with if-cond...)
+= It is used to STOPs-loop & comes out of looping-stmts using some condition
+(Termination/Exit of Loop)
+
+Syntax:-
+loop:
+	if cond:
+		break;
+
+=** it skips remaining stmts of current-iteration(cycle) & also skips remaining iterations(cycles)
+
+##Program (BreakStmt.py)
+##Program to demo break-stmt in Loops)
+
+'''
+#using while loop
+i=1
+while i<=100:
+	if i==51:
+		break;
+	print(i)        #odd-nums
+	i=i+2;
+
+print("\nBreaked out of loop")
+'''
+
+#sp-case  
+#using infinite while loop
+i=2
+while True:
+	if i==52:
+		break;
+	print(i)        #even-nums
+	i=i+2;
+
+print("\nBreaked out of infinite-loop")
+
+  
+NOTE:-
+= The best-way(correct-way) to stop (or) come out of Infinite-Loop is with break-stmt(using cond..)
+
+
+b) continue stmt:- 
+(mainly used in loops(for/while) with if-cond...)
+Ex:-
+	loop:
+		...
+		if cond:
+			continue;
+		....
+= It is used to skip current-cycle-stmts and continues with next-iteration(cycle)
+(cycle--->iteration/loop)
+
+
+##Program (ContinueStmt.py)
+##Program to demo continue-stmt in Loops
+
+'''
+#using while-loop
+i=1
+while(i<=100):
+    if i%2==1:  #odd-continue
+        i=i+1;
+        continue
+    print(i)
+    i=i+1
+'''
+
+
+#using for loop
+for x in range(1,101,1):
+    if x%2==0:  #even-continue
+        continue
+    print(x)
+
+
+
+
+c) pass statement:-
+Ex:-
+	if (cond): 
+		pass;		----> suite(body w.o stmts)
+(skipping indented-block-of-code)
+(if indented-block-of-code not-req use pass-stmt)
+= It is used in program when some indented-block-of-code is not required for header-stmt
+(header & suite)
+=** pass is like empty-stmts or (body w.o stmts)
+(it simply goes to next-stmt in prog)(not-out-of-loop & not-begin-of-loop)
+= pass takes control of execution to next-stmt in program
+
+Ex:-
+	def m1():  #func-body
+		pass; 
+	class A: 	#class-body
+		pass;
+
+##Program (PassStmt.py)
+#Program to demo pass-stmt in program with Loops
+
+#inside loops
+for x in range(1,101):
+	if x%3==0:
+		print(x);
+	else:
+		pass;
+
+
+
+
+(*******)
+===================================================================
+==>> Numbers in Python:-
+= Numbers means/is numeric-values
+= Python supports 3-dtypes of numeric-values,
+	a) int-dtype (10)
+	b) float-dtype (10.5)
+	c) complex-dtype (5+6j)
+	
+= For number dtypes, we have num-type-conversion funcs,
+(num-type-convr-funcs)
+	a) int()
+	b) float()
+	c) complex(a)	---> a+0j
+	d) complex(a,b) ---> a+bj
+
+NOTE:-
+= Python provides diff.funcs, using which we can perform mathematical-oper
+
+
+==> Mathematical Functions in Py-Numbers:-
+(print(), input(), type(), id() .....)
+= Python provides "math.py", pre-defined module(lib-module-file)
+= Here we have diff-math-funcs
+Ex:-
+	square-root
+	logarithm
+	trignometric
+	factorial
+	etc...
+
+NOTE:-
+***(How to use a lib-module??)
+-------------------------------
+step1:-
+	import math; 		#import module in program
+step2:-
+	use respective funcs or vars with (.dot access-operator)
+	Ex:-
+		math.sqrt(100)
+		math.pi
+	
+
+	
+	
+##Program (MathFuncs.py)
+##(Program to demo different Mathematical-Functions)
+
+
+
+**) abs(x):-
+= It gives absolute (positive) value of given number "x"(Numeric-Expr)
+
+**) ceil(x):-
+= It gives least-integer-value which is greater-than or equals to given value
+Ex:- 10--10.5--11(11 is ceil of 10.5)
+= It is in math module (import it)
+Ex:-
+from math import ceil;
+import math;
+
+**) factorial()
+= it gives factorial of given number
+	math.factorial(5)
+
+**) exp(x):-
+= It gives exponential of x (e power of x)
+= It is in math module
+
+**) fabs(x):-
+= It gives absolute value(+ve) of x
+= it is mainly used on float-value(also works on int-values)
+= It is in math-module
+
+**) floor(x):-
+= It gives next/greatest-integer-value which is greater-than or equals to given-value
+= It is in math module (import it)
+
+**) log(x):-
+= It give natural logarithm value of x (log to the base-e)
+= and x>0 (compulsory)
+= It is in math-module
+
+**) log10(x):-
+= It give logarithm value of x (base-10)
+= and x>0 (compulsory)
+= It is in math-module
+
+**) max(x,y,z,...):-
+= It gives maximum value from given args
+
+**) min(x,y,z,...):-
+= It gives minimum value from given args
+
+**) pow(x,y):-
+= Gives x to the power of y
+pow(x,y,z):- (Not-Working)
+= Gives pow(x,y)%z
+= It is in math-module
+
+**) sqrt(x):-
+= It gives square-root of given number (x>0)
+= it is in math-module
+
+
+
+##Program (MathFuncs.py)
+##(Program to demo different Mathematical-Functions)
+
+import math;
+'''
+#abs() function		(+ve int/float val)
+print(abs(-9))
+print(abs(9));
+print(abs(0));
+print(abs(-0));
+print(abs(-9.5));
+print(abs(9.5));
+print(abs(0.0));
+print(abs(-0.0));
+'''
+
+
+'''
+#ceil() function (upper/next int-value or itself)
+import math;
+print(math.ceil(9.8));
+print(math.ceil(9.0));
+print(math.ceil(9));
+print(math.ceil(-9));
+print(math.ceil(-9.8));
+print(math.ceil(-9.2));
+print(math.ceil(-9.0));
+'''
+
+
+'''
+#floor() function (lower/prev int-value or itself...)
+import math;
+print(math.floor(9.8));
+print(math.floor(9.0));
+print(math.floor(9));
+print(math.floor(-9));
+print(math.floor(-9.8));
+print(math.floor(-9.0));
+print(math.floor(-9.2));
+'''
+
+
+
+'''
+#exp() function (e--->Euler's number) (e power x)
+import math;
+print(math.exp(0));
+print(math.exp(1));
+#We get exact e-value(2.718281828459045)
+'''
+
+
+'''
+#fabs() function (float abs +ve val)
+import math;
+print(math.fabs(3));
+print(math.fabs(-3))
+print(math.fabs(3.5))
+print(math.fabs(-3.5));
+print(math.fabs(0));
+print(math.fabs(-0));
+'''
+
+
+'''
+#log() function (log-value to the base-e)
+import math;
+print(math.log(10))
+print(math.log(math.exp(1)));
+print(math.log(1))
+#print(math.log(-10));	#ValueError(-ve no)
+'''
+
+
+'''
+#log10() function (log-value to base-10)
+import math;
+print(math.log10(10));
+print(math.log10(1));
+print(math.log10(100));
+print(math.log10(1000));
+print(math.log10(-10));	#ValueError
+'''
+
+'''
+#max() function
+print(max(10,20,30));
+print(max(-10,-20,-30));
+print(max(10.5,20.5,30.5));
+print(max(-10.5,-20.5,-30.5));
+'''
+
+
+
+'''
+#min() function
+print(min(10,20,30));
+print(min(-10,-20,-30));
+print(min(10.5,20.5,30.5));
+print(min(-10.5,-20.5,-30.5));
+'''
+
+
+'''
+#pow(x,y) function (x pow y)
+import math;
+print(math.pow(10,3));
+print(math.pow(-10,3));
+print(math.pow(10,-3))
+print(math.pow(100,0.5));	#it is 10 power 0.5(1/2) i.e. sqrt(100)
+'''
+
+
+'''
+#sqrt() function (sqr-root-val)
+import math;
+print(math.sqrt(100));
+print(math.sqrt(81));
+#print(math.sqrt(-10));		#ValueError(-ve)
+'''
+
+
+'''
+#factorial() function
+import math
+print(math.factorial(5))
+print(math.factorial(6))
+'''
+
+
+'''
+#math.py vars
+import math;
+print(math.pi)
+print(math.e)
+#exact value of pi 3.141592653589793
+'''
+
+
