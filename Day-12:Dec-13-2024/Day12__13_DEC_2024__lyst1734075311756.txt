@@ -1,0 +1,464 @@
+Date:- 13-DEC-2024 (FRI(4))
+(mon-sun ----> 0-6) 
+Date&Time chapter
+----------------------------------
+Email:- srikanth.sai.sir@gmail.com
+----------------------------------
+
+==================================
+Google classroom code:- 
+==================================
+
+
+Todays-Topics?? 
+----------------------
+***********
+**********************************
+==> Random Number Generation Functions:-
+= they are available in random.py py-lib-module (import random;)
+= they are used to generate Random-Numbers
+Ex:-
+import random;
+
+
+##Program (RandomFuncs.py)
+(Program to work with Random-Functions)
+
+
+**) choice(sequence):-
+= It gives random number/item from list,tuple,string
+= It is in random-module
+(import random;)
+
+
+**) randrange(start,stop,step):-
+= It gives random value for given range of values
+= It is in random-module
+= Here stop value is not-included in range
+= step-value generates range of values
+
+**) random():-
+= It generates a random float number b/w 0 to 1
+= It is in random-module
+
+**) shuffle(list):-
+= It will shuffle the values in a list
+= it is in random-module
+= It shuffles the values randomly
+
+**) uniform(x,y):-
+= It gives a random float-value b/w x and y
+= It is in random-module
+= last value is not-included(y)
+
+
+##Program (RandomFuncs.py)
+#Program to work with Random-Functions
+
+'''
+#choice() (works only on index-coll) -->random value from given coll.
+import random;
+list1 = [11,22,33,44,55];
+print(random.choice(list1));
+s1 = "SaiRamKumar";
+print(random.choice(s1));
+#set1 = {1,2,3,4,5};
+#print(random.choice(set1));	#set does not have indexes
+'''
+
+
+'''
+##randrange(start,end,step)  --> random value in given range
+import random;
+print(random.randrange(1,100));
+print(random.randrange(3,100,3));
+print(random.randrange(-20,-1));
+#print(random.randrange(-1,-100));  #Empty-range(ValueError)
+'''
+
+'''
+#random() #random value from 0 to 1(not-included)
+import random;
+print(random.random());
+##print(random.random());
+'''
+
+'''
+#shuffle()  ---> shuffles given coll.of.vals
+import random;
+list1 = [10, 20, 30, 40,50];
+random.shuffle(list1)
+print(list1);
+'''
+
+'''
+#uniform(x,y) --->random float-value b/w x & y(not-included)
+import random
+print(random.uniform(1,5));
+print(random.uniform(11,15));
+'''
+
+
+================================================================
+***===>>> Strings in Python:-
+================================
+def:-
+	= String is collection-of-chars, represented in quotes
+	i.e, 
+	single-quotes'...'  (single-word)
+	double-quotes"..." (multi-words or 1-line)
+	triple-quotes'''....''' (multi-line-text) #compulsory """....."""
+	(single-triple-quotes/double-triple-quotes)
+	
+Ex:-
+	s1 = 'Sai';
+	s2 = "Sai Ram"; (space is also 1-char in str)
+	s3 = '''
+	#101, St.No.9
+	HimayathNagar,
+	Hyd(TS)
+	India
+	'''
+
+NOTE:-
+1)
+= Use single-quotes for single-word
+= Use double-quotes for multi-words(1-line)
+= Use triple-quotes for multi-line-text(compulsory)
+2)**
+= Python does not support char-dtype. 
+(Even single-char is also taken as string-dtype)
+Ex:-
+ch = 'A'; or "A"
+print(type(ch)); -----> "str"
+
+##Program (StringEx1.py)
+##Program to demo strings in python
+##Program (StringEx1.py)
+##Program to demo strings in python
+
+'''
+#str-type(single-char)
+#ch = 'A';
+ch = "Z";
+print(ch);
+print(type(ch));
+'''
+
+
+'''
+ss='Sai Ram Kumar';
+print(ss);
+print(type(ss));
+'''
+'''
+ss="Sai Ram Kumar";
+print(ss);
+print(type(ss));
+'''
+
+
+#print()	#inside triple-q # is also 1-char not comment
+#addr = '''#Sai Ram Kumar,
+#HimayathNagar,
+#Hyderabad.''';
+#print(addr); 
+
+#addr = """
+#	Sai Ram Kumar,
+#		
+#    HimayathNagar,
+#    
+#    Hyderabad.
+#"""; 
+#print(addr);
+
+
+#sp-case
+print()
+#quotes with-in quotes
+#ss = 'Hi Hello's Welcome';	#Error
+#ss = 'Hi Hello\'s Welcome';
+#ss = "Hi Hello"s Welcome";	#Error
+#ss = "Hi Hello\"s Welcome";
+#ss = "Hi Hello's Welcome";
+#ss = 'Hi Hello"s Welcome';
+#ss = '''Hi Iam "Sai Ram Kumar" and 'Python' Trainer''';
+ss = """Hi Iam "Sai Ram Kumar" and 'Python' Trainer""";
+print(ss);
+
+
+
+NOTE:-
+=*** inside triple-quot-str, we get tab-space & new-line as it is (\t,\n not-req)
+=*** inside triple-quot-str # is taken as single-char but not single-line-comment
+
+1) in triple-quotes string, no need to use \t or \n chars. they are taken auto. wrt given-text
+2) to represent quotes with-in quotes, use one-type-quotes in another(but not same type of quotes) #combination(diff) of quotes
+3) However we can use same-type-of quotes inside same-type of quotes using \(ESC-SEQ-char)
+
+
+============================================================
+***String Operations***
+--------------------------------
+===>>>>**Strings supports indexes::-
+
+Ex:-
+	"hello"
+	[01234] ---> 0 to n-1
+	"h  e l l o"
+	[-5-4-3-2-1] ---> -1 to -n
+(0 to n-1 and -1 to -n)
+(L->R and R->L)
+(F->L and L->F)
+(+ve and -ve)
+(Forward and Backward)
+==Diagram==
+
+##Program (StringEx2.py)
+
+
+==> Getting or Accessing chars from string:-
+= It is done in 2-ways,
+a) using indexes
+b) using slicing
+
+a) using indexes:-
+==Diagram==
+Ex:-
+	"hello"
+	
+= Python supports both +ve or -ve indexes
+= +ve indexes are First to Last (L->R) (Forward) (0 to n-1)
+= -ve indexes are Last to First (R->L) (Backward) (-1 to -n)
+Ex:- (we use index with [] subscript-operator/index-oper)
+ss = "Hello";
+print(ss[0]); 0,1,2,3,4
+print(ss[-1]); -1,-2,-3,-4,-5
+print(s[10]);	#IndexError (string index out of range)
+
+##Program (StringEx2.py)
+#Program to accept string and print its chars with indexes
+
+NOTE:-
+= the best way to access elements of any collection is with loops(For-loop)
+Ex:-
+for x in ss:
+	print(x);
+
+
+b) Using slice-operator:-
+Syntax:-
+	str[beginIndex : endIndex : stepIndex]
+
+= This acts like sub-string
+= beginIndex is starting-index
+= endIndex is (last-index - 1)
+= stepValue is increment-value
+
+
+
+		(+ve/-ve farward/backward)
+	------------------------------	
+str[startIndex:endIndex:stepIndex]
+		|		|			|
+		|		|			def(+1)
+		|		|
+	def(0)    def(lastindex+1)
+				(not-incl.)
+	--------------------------------
+			(not-compul.)
+
+
+
+NOTE:-
+= If beginIndex is not given then it will take from 0-index
+= If endIndex is not given then it will take till last-index
+= Default stepValue is 1
+
+
+==> Strings with Mathematical Operators:-
+= + operator is used for string concatenation(add)
+= * operator is used for string repeatition
+
+==> Length of a String:-
+(no.of.chars in a string)
+= len() gives length of a string
+Ex:-
+ss = "Sai Ram Kumar";
+print(len(ss));
+
+
+##Program (StringEx2.py)
+#Program to accept string and print its chars with indexes & slice-operator
+
+'''
+#Access-string-char
+#using indexes and [] index-oper/subscript-oper
+ss = "Hello";		#0,1,2,3,4			#[]index/subscript-oper
+print(ss[0]); 
+print(ss[1]); 
+print(ss[2]); 
+print(ss[3]); 
+print(ss[4]); 
+print()
+print(ss[-1]); 
+print(ss[-2]); 
+print(ss[-3]); 
+print(ss[-4]); 
+print(ss[-5]); 
+#print(ss[10]);	    #IndexError (out-of-range) 
+#print(ss[-10]);	#IndexError 
+'''
+
+'''
+#string access with loop
+ss = input("Enter any String : ");
+for x in ss:        #hello
+	print(x)
+    
+print("out of for-loop")
+'''
+
+'''
+#str-access-slicing
+#with slicing operator str[startI:endI:stepI]
+ss = "Welcome to Python";
+print(ss[1:9:1]);
+print(ss[1:9]);
+print(ss[1:9:2]);
+print(ss[:9]);
+print(ss[9:]);
+print(ss[::])       #[0 : till-last-index+1 : +1]
+print(ss[:]);	
+print(ss[::-1]);			#sp-case [-1:-(n+1) : -1]
+'''
+'''
+#assignments
+print(ss[::-2]);
+print(ss[-1:-9:-1]);
+print(ss[-1:-9:-2]);	
+print(ss[-9:-1:-1]);
+print(ss[1:0:2]);	
+'''
+
+
+'''
+#str addition(+ oper) 
+#str repetition(* oper)
+s1 = "Sai Ram";
+s2 = " Kumar";
+print(s1+s2);
+print(s1*5);
+print(s1*-5);	#empty-str ""
+print(s1*0);	#empty-str ""
+print(s2+s1)
+'''
+
+
+
+#len() func (no.of.chars in str)
+ss="Hello"
+print(len(ss));
+ss = "Sai Ram Kumar";
+print(len(ss));
+
+
+
+
+
+(****)
+=======================
+==> Checking/Finding/Searching String:-
+= Check whether given string or char is present in original-string or not
+= It is done with "in" or "not in" operator
+(membership-operators) True/False
+
+
+#Program (StringEx3.py)
+#(Prog to work with strings)
+##Program (StringEx3.py)
+#Program to work with strings(check/find/search) in, not-in oper
+
+ss ="Hello Students, Welcome to Python Class";
+print("to" in ss);
+print("," in ss);
+print("hi" in ss);
+print("hello" in ss)        #case-sensitive
+print("Python" not in ss);
+print("HW" in ss)       #2-diff-chars but not single-word
+print("" in ss) #empty-str in ss
+
+'''
+#assignment
+print()
+print("welcome" not in ss)  #case-sensitive
+print(" " in ss)
+print(" " not in ss)
+'''
+
+
+NOTE:-
+= Here " " space is also 1-char in string
+= searching is done based on case-sensitive
+(upper-case NOT-EQUAL-TO lower-case letters)
+
+
+
+
+****Other String operations/methods***
+------------------------------
+==> Counting all sub-strings in main-string:-
+= It is done with count() method/function
+(beginIndex & endIndex also taken)
+= it gives count of sub-string in org-string
+Ex:-
+ss.count(subss);	//from begin(0) to last(len)
+ss.count(subss,beginIndex,endIndex);
+
+
+==> Replacing a String with another string:-
+= It is done with below method,
+Syn:-
+	ss.replace(oldstr, newstr);
+= it replaces oldstr with newstr in org-str but we get new-string
+	
+NOTE:-
+= String value(object) are immutable-obj
+(org-str cannot be modified but can be re-assigned)
+= Any changes done to org-str, new str-obj is created
+= Hence in replace(), we got new-str after replace
+
+
+##Program (StringEx4.py)
+##Program to work with string-functions or methods
+
+'''
+#count(str,begin,end)
+#Counting all sub-strings in main-string
+ss = "Hello Welcome to Python Hello users";
+print(ss.count("Hello"));   #begin(0), end(lastIndex+1)
+print(ss.count("Hello",6));
+print(ss.count("Hello",6,23));
+print(ss.count("Welcome",6));
+print(ss.count("Welcome",8));
+'''
+
+'''
+#replace()
+#Replacing old-str with new-str
+ss = "Hello, Welcome to Python, Hello users";
+newss = ss.replace('e','*');
+#newss = ss.replace('Hello','Hi');
+print(ss);
+print(newss);
+'''
+
+
+'''
+#Immutable str-obj(***) #org-data cannot be modified(we get new-data)
+ss = "Hello Welcome";
+newss = ss.replace('e','*');
+print(ss,"===>",id(ss));
+print(newss,"===>",id(newss));
+'''
