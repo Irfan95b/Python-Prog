@@ -3,15 +3,15 @@
         Numbers means/is numeric-values
         Python supports 3-types of numeric-values or numeric data.
 
-            a) intiger type (10)
+            	a) intiger type (10)
 	        b) float type or decimal (10.5)
 	        c) complex-type (5+6j)
 
     For different numeric data values, we have numeric- data type-conversion funcs.
         a) int()
-	    b) float()
-	    c) complex(a)	---> a+0j
-	    d) complex(a,b) ---> a+bj
+	b) float()
+	c) complex(a)	---> a+0j
+	d) complex(a,b) ---> a+bj
 
 '''
 
